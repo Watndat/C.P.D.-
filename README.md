@@ -22,4 +22,8 @@ Hier müssen wir uns zunächst überlegen, ob wir nur eine Farbe festlegen oder 
 <details>
   <summary>Zählstand</summary>
   Der Zählstand muss so programmiert werden, dass ab einer gewissen Punktzahl einer der beiden Spieler gewinnt. 
+  </details>
+
+<details>
+  <summary>Schläger</summary>
 
