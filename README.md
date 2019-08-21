@@ -3,6 +3,7 @@
 ## Von der Idee zum Spiel
 
 [Die Idee!](#eins)
+
 [Inhaltsliste](#zwei)
 
 
