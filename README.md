@@ -20,5 +20,5 @@ Hier müssen wir uns zunächst überlegen, ob wir nur eine Farbe festlegen oder 
 
 <datails>
   <summary>Zählstand</summary>
-Der Zählstand muss so programmiert werden, dass er ab einer gewissen Punktzahl einer der beiden gewinnt. 
+  Der Zählstand muss so programmiert werden, dass er ab einer gewissen Punktzahl einer der beiden gewinnt. 
 
