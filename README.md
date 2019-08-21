@@ -18,7 +18,7 @@ Da wir beide uns noch nie so richtig mit programmieren beschäftigen haben, woll
 Hier müssen wir uns zunächst überlegen, ob wir nur eine Farbe festlegen oder ein ildlichen Hintergrund verwenden.
 </details>
 
-<datails>
+<details>
   <summary>Zählstand</summary>
   Der Zählstand muss so programmiert werden, dass er ab einer gewissen Punktzahl einer der beiden gewinnt. 
 
