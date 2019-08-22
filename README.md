@@ -12,6 +12,7 @@
 ## Die Idee! <a name="eins"></a>
 
 Da wir beide uns noch nicht so richtig mit programmieren beschäftigen haben und somit auch keine Vorwissen besitzen, wollen wir zunächst ein recht simples Spiel programmieren. Dieses Spiel ist an eins der ersten PC Games (Pong) anglehnt. Dazu haben wir eine Liste erstellt, auf der die Punkte aufgelistet sind welche wir programmieren müssen. 
+<hr>
 
 
 ## Inhaltsliste <a name="zwei"></a>
@@ -32,10 +33,22 @@ Hier müssen wir uns zunächst überlegen, ob wir nur eine Farbe festlegen oder 
  </details>
  
 <details>
+  <summary>Ball</summary>
+  Der Ball soll einen Form und ein Design bekommen. Aber der Ball hat auch eine bestimmte Geschwindigkeit, wobei wir uns noch überlegen, ob der Ball im laufe des Spiels die Geschwindigkeit verändert. Dies wäre allerdings auch ein Feature, welches wir erst in Angriff nehemen werden, wenn genügend Zeit dafür bleibt.
+  </details>
+  
+<details>
   <summary>Mittellinie</summary>
   Heirbei überlegen wir uns, ob wir diese gestrichelt oder durchgezogen darstellen. 
   </details>
   
+<details>
+  <summary>Außenlinien</summary>
+  Hierbei muss defineirt werden ab wann es einen Punkt gibt, also wo genau die Außenlinien liegen. Auf der oberen und unterern Linie muss ein abprallen programmiert werden.
+  </details>
+  
+Im weiteren Blog werden wir den Verklauf der einzelen Bestandteile darstellen. Die fertigen Bestandteile sind dabei immer am Ende des einzelnen Eintargs dargestellt. 
+ <hr>
  
  
  ## Der Schläger <a name="drei"></a>
