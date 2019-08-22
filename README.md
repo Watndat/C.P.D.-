@@ -38,5 +38,5 @@ Hier müssen wir uns zunächst überlegen, ob wir nur eine Farbe festlegen oder 
   
  
  
- ## Der Schläger <a name="drei"></aO
+ ## Der Schläger <a name="drei"></a>
 
