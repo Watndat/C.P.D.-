@@ -57,7 +57,13 @@ Im weiteren Blog werden wir den Verklauf der einzelen Bestandteile darstellen. D
  
  <details>
   <summary>Startbutton</summary>
- 
+ Der Startbildschirm wurde mit einer vorgefertigten Animation aus der Animationsbibliothek von code.org gestallt. Hierbei kann durch einen Mausklick auf den Startbutton der Startbildschirm verlassen wreden und das eigentliche Spielfeld erscheint. Als Design wurde ein schwarzes Rechteck mit weißen Großbuchstaben. 
+  </details>
+  
+<details>
+  <summary>Hintergrund</summary>
+  Hierbei wurde ien weißer Hintergrund mit blauene Großbuchstaben gewählt. Dies steht im Kontrast zu dem Starbutton gebildet, weshalb es für den Spieler ansprechender gestalttet wurde. 
+  </details>
  
  
  ## Der Schläger <a name="drei"></a>
