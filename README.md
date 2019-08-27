@@ -6,6 +6,8 @@
 
 [Inhaltsliste](#zwei)
 
+[Der Startbildschirm](#vier)
+
 [Der Schläger](#drei)
 
 
@@ -49,6 +51,13 @@ Hier müssen wir uns zunächst überlegen, ob wir nur eine Farbe festlegen oder 
   
 Im weiteren Blog werden wir den Verklauf der einzelen Bestandteile darstellen. Die fertigen Bestandteile sind dabei immer am Ende des einzelnen Eintargs dargestellt. 
  <hr>
+ 
+ 
+ ## Der Startbildschirm <a name="vier"></a>
+ 
+ <details>
+  <summary>Startbutton</summary>
+ 
  
  
  ## Der Schläger <a name="drei"></a>
