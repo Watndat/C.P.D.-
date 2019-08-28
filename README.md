@@ -67,4 +67,13 @@ Im weiteren Blog werden wir den Verklauf der einzelen Bestandteile darstellen. D
  
  
  ## Das Spielfeld <a name="drei"></a>
-
+ 
+ <details>
+  <summary>Hintergrund</summary>
+  Der Hintergrund ist in einem einnafchen grau gehlten, damit alle weiteren Inhalte besser zu sehen ist.
+  
+  (Bild und Code einfügen)
+  
+  </details>
+  
+  
