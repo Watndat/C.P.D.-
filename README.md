@@ -55,7 +55,7 @@ Ein altes Spiel, welches aber jeder kennt. **PONG!** Das Spiel ist angelehnt an 
  ## Das Spielfeld <a name="vier"></a>
  
  <details>
-  <summary>Hintergrund</summary>
+  <summary>Hintergrund und Mittellinie</summary>
   Der Hintergrund ist in einem einnafchen grau gehlten, damit alle weiteren Inhalte besser zu sehen ist.
   
   (Bild und Code einfügen)
@@ -64,17 +64,20 @@ Ein altes Spiel, welches aber jeder kennt. **PONG!** Das Spiel ist angelehnt an 
   
 <details>
   <summary>Schläger</summary>
-  Die Schläger können durch Tastenkombinationen bewegt wreden. Der Rechte, also blaue, Schläger wird durch die Pfeilentaste "Hoch" und "Runter" bewegt. Der Linke, also rote, Schläger kann durch "W" hoch und durch "S" runter bewegt werden. Beide Schläger steoppen am Ende des Spielfeldes.
+  Die Schläger können durch Tastenkombinationen bewegt wreden. Der Rechte, also blaue, Schläger wird durch die Pfeilentaste "Hoch" und "Runter" bewegt. Der Linke, also rote, Schläger kann durch "W" hoch und durch "S" runter bewegt werden. Beide Schläger steoppen am Ende des Spielfeldes. 
+  Die Mittelinie ist für den Spieler eingezeichent worde. Dadurch lässt leichter die eigene Hälfte erkennen. Sie hat dadurch für die Grundfunktionen keine Funktion.
   
   (Code einfügen)
   
   </details>
   
 <details>
-  <summary>Mittellinie</summary>
-  Die Mittellinie ist für den Spieler definiert werden. Sie nimmt dabei nur die Rolle ein, dass der Spieler sehen kann, auf welcher Seite seins Hälfte ist.
+  <summary>Ball</summary>
   
-  (Code)
+  </details>
+  
+<details>
+  <summary>Zählstand</summary>
   
   </details>
   
