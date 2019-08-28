@@ -23,7 +23,7 @@ Da wir beide uns noch nicht so richtig mit programmieren beschäftigen haben und
 <details>
   <summary>Kurse</summary>
   Bei code.org können Nutzer auch ohne Anmeldung Kurse zum Thema programmieren machen. Dabei werden in verschiedene Altersstufen unterschieden. Auch gibt es Kurse für Nichtleser, sodass auch schon die Kleinsten programmieren können.
-  </deatils>
+  </details>
   
   <hr>
  
