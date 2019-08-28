@@ -62,4 +62,20 @@ Ein altes Spiel, welches aber jeder kennt. **PONG!** Das Spiel ist angelehnt an 
   
   </details>
   
+<details>
+  <summary>Schläger</summary>
+  Die Schläger können durch Tastenkombinationen bewegt wreden. Der Rechte, also blaue, Schläger wird durch die Pfeilentaste "Hoch" und "Runter" bewegt. Der Linke, also rote, Schläger kann durch "W" hoch und durch "S" runter bewegt werden. Beide Schläger steoppen am Ende des Spielfeldes.
+  
+  (Code einfügen)
+  
+  </details>
+  
+<details>
+  <summary>Mittellinie</summary>
+  Die Mittellinie ist für den Spieler definiert werden. Sie nimmt dabei nur die Rolle ein, dass der Spieler sehen kann, auf welcher Seite seins Hälfte ist.
+  
+  (Code)
+  
+  </details>
+  
   
