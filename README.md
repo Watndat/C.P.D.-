@@ -13,7 +13,7 @@
 
 ## Die Idee! <a name="eins"></a>
 
-Da wir beide uns noch nicht so richtig mit programmieren beschäftigen haben und somit auch keine Vorwissen besitzen, wollen wir zunächst ein recht simples Spiel programmieren. Dieses Spiel ist an eins der ersten PC Games (Pong) anglehnt. Dazu haben wir eine Liste erstellt, auf der die Punkte aufgelistet sind welche wir programmieren müssen. 
+Ein altes Spiel, welches aber jeder kennt. **PONG!** Das Spiel ist angelehnt an den Klassiker. Jedoch sind einige Funktionen hinzugefügt. Im Folgenden Blog werden alle Funktionen, sowie der Code für das Spiel erklärt und dargestellt.
 <hr>
 
 
