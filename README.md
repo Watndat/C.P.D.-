@@ -57,8 +57,8 @@ Ein altes Spiel, welches aber jeder kennt. **PONG!** Das Spiel ist angelehnt an 
  <details>
   <summary>Hintergrund und Mittellinie</summary>
   Der Hintergrund ist in einem einnafchen grau gehlten, damit alle weiteren Inhalte besser zu sehen ist.
-  
-  (Bild und Code einfügen)
+
+  ![Screenshot_2019-08-28 Mittellinie-Hintergrund-Code](https://user-images.githubusercontent.com/54102292/63867479-32cbee80-c9b5-11e9-8251-13f84a6361c0.png)
   
   </details>
   
