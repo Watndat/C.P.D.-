@@ -44,6 +44,8 @@ Da wir beide uns noch nicht so richtig mit programmieren beschäftigen haben und
 <details>
   <summary>Startbutton</summary>
   Der Startbildschirm wurde mit einer vorgefertigten Animation aus der Animationsbibliothek von code.org gestallt. Hierbei kann durch einen Mausklick auf den Startbutton der Startbildschirm verlassen wreden und das eigentliche Spielfeld erscheint. Als Design wurde ein schwarzes Rechteck mit weißen Großbuchstaben.
+  ![Screenshot_2019-08-28 Startbutton-Bild](https://user-images.githubusercontent.com/54102292/63864321-ed58f280-c9af-11e9-909a-866e0d629293.png)
+  
   </details> <hr>
  
  
