@@ -30,6 +30,9 @@ Da wir beide uns noch nicht so richtig mit programmieren beschäftigen haben und
  
  ## Der Startbildschirm <a name="drei"></a>
  
+ ![Screenshot_2019-08-28 Bild-Startbildschirm](https://user-images.githubusercontent.com/54102292/63863667-e54c8300-c9ae-11e9-9a05-4cec282734e9.png)
+
+ 
  <details>
   <summary>Hintergrund</summary>
   Hierbei wurde ien weißer Hintergrund mit blauene Großbuchstaben gewählt. Dies steht im Kontrast zu dem Starbutton gebildet, weshalb es für den Spieler ansprechender gestalttet wurde.
