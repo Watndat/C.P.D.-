@@ -36,6 +36,9 @@ Da wir beide uns noch nicht so richtig mit programmieren beschäftigen haben und
  <details>
   <summary>Hintergrund</summary>
   Hierbei wurde ien weißer Hintergrund mit blauene Großbuchstaben gewählt. Dies steht im Kontrast zu dem Starbutton gebildet, weshalb es für den Spieler ansprechender gestalttet wurde.
+  
+  ![Screenshot_2019-08-28 Code-Startbildschirm](https://user-images.githubusercontent.com/54102292/63863940-4ffdbe80-c9af-11e9-87ec-1d861c2b6eb7.png)
+
   </details>
   
 <details>
