@@ -28,7 +28,7 @@ Ein altes Spiel, welches aber jeder kennt. **PONG!** Das Spiel ist angelehnt an 
 <details>
   <summary>Programmierfunktion</summary>
   
-  </deatails>
+  </details>
   
   <hr>
  
