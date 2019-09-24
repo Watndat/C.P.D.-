@@ -23,8 +23,8 @@ Ein altes Spiel, welches aber jeder kennt. **PONG!** Das Spiel ist angelehnt an 
 <details>
   <summary>Grundsätzlich</summary>
   
-  * Schüler sollen weltweit kostenlosen Zugang haben Informatik zu lernen. \
-  * Über diese Seite kann der Lehrer einen Lehreraccount erstellen, sodass er alle Projekte der Schüler jederzeit abrufen kann. \
+  * Schüler sollen weltweit kostenlosen Zugang haben Informatik zu lernen. 
+  * Über diese Seite kann der Lehrer einen Lehreraccount erstellen, sodass er alle Projekte der Schüler jederzeit abrufen kann. 
   * Mehrere Unternehmen unterstützen code.org. Z.B. Google, Microsoft und viele mehr.
   
   </details>
