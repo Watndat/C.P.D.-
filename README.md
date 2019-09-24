@@ -21,6 +21,10 @@ Ein altes Spiel, welches aber jeder kennt. **PONG!** Das Spiel ist angelehnt an 
 ### code.org
 
 <details>
+  <summary>Grundsätzlich</summary>
+  * Schüler sollen weltweit kostenlosen Zugang haben Informatik zu lernen.
+
+<details>
   <summary>Kurse</summary>
   Bei code.org können Nutzer auch ohne Anmeldung Kurse zum Thema programmieren machen. Dabei werden in verschiedene Altersstufen unterschieden. Auch gibt es Kurse für Nichtleser, sodass auch schon die Kleinsten programmieren lernen können.
   </details>
