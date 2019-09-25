@@ -55,6 +55,12 @@ Ein altes Spiel, welches aber jeder kennt. **PONG!** Das Spiel ist angelehnt an 
  
 ## Die Variablen <a name="vier"></a>
 
+sorry das ich hier so hässlich reinschreibe und alles zerstöre ABER die variablen sind alles globale Variablen, das heißt sie müssen nicht in jeder funktion neu benannt werden. Ein teil dieser globalen Variablen sind die Boolean Variablen diese benutzt wir um zwischen den verschiedenen bildschirmen hin und her zuspringen. aber eigentlich sind das auch nur normale variablen, so wie alle anderen auch. deswegen würd ich so was wie "In dem gesammten Spiel werden globale Variablen verwendet. Diese beziehen sich auf das gesammte Spiel und werden am Anfang bestimmt." schreiben.
+
+
+
+
+
 In dem gesammten Spiel werden Boolean Variablen verwendet. Diese beziehen sich auf das gesammte Spiel und sind globale Variablen. Dadurch werden sie direkt am Anfang definiert und in allen weiteren Codes verwendet.
 
 ```  
