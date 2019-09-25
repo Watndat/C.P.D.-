@@ -6,9 +6,13 @@
 
 [Das Programm](#zwei)
 
-[Der Startbildschirm](#drei)
+[Das Spiel](#drei)
 
-[Das Spielfeld](#vier)
+[Die Variablen](#vier)
+
+[Der Startbildschirm](#fünf)
+
+[Das Spielfeld](#sechs)
 
 
 ## Die Idee! <a name="eins"></a>
@@ -44,7 +48,28 @@ Ein altes Spiel, welches aber jeder kennt. **PONG!** Das Spiel ist angelehnt an 
   <hr>
  
  
- ## Der Startbildschirm <a name="drei"></a>
+## Das Spiel <a name="drei"></a>
+ 
+ <hr>
+ 
+ 
+## Die Variablen <a name="vier"></a>
+
+In dem gesammten Spiel werden Boolean Variablen verwendet. Diese beziehen sich auf das gesammte Spiel und sind globale Variablen. Dadurch werden sie direkt am Anfang definiert und in allen weiteren Codes verwendet.
+
+```  
+var Hintergrund2;  
+
+var Schlaeger_links;  
+var Schlaeger_rechts;  
+var Schlaegergeschwindigkeit = 10;  
+
+var Mittellinie;
+```  
+<hr>
+
+ 
+## Der Startbildschirm <a name="fünf"></a>
  
  ![Screenshot_2019-08-28 Bild-Startbildschirm](https://user-images.githubusercontent.com/54102292/63863667-e54c8300-c9ae-11e9-9a05-4cec282734e9.png)
 
@@ -68,7 +93,7 @@ Ein altes Spiel, welches aber jeder kennt. **PONG!** Das Spiel ist angelehnt an 
   </details> <hr>
  
  
- ## Das Spielfeld <a name="vier"></a>
+ ## Das Spielfeld <a name="sechs"></a>
  
  <details>
   <summary>Hintergrund und Mittellinie</summary>
