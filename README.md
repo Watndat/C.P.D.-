@@ -45,6 +45,12 @@ Ein altes Spiel, welches aber jeder kennt. **PONG!** Das Spiel ist angelehnt an 
   Im App-Labor könne Spiele in Form einer App programmiert werden. Dadurch lassen sich diese Spiele auch auf Tablets oder Handys spielen. 
   </details>
   
+<details>
+  <summary>Farbcode</summary>
+ Während man auf code.ord programmiert, wird man mit verschidenen typen und farben konfrontiert.
+  
+  </details>
+  
   <hr>
  
  
