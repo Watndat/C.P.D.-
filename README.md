@@ -65,6 +65,7 @@ In diesem Spiel wurde allerdings in Javaskript geschrieben. Auch hier gibt es in
   * _Comments_ sind grün 
   * variierbare Element wie _Farben_ oder _Positionsangaben_ wreden blau angezeigt
   * alle aderen _Texte_ sind grau
+  * die Boolean, welche _true und fals_ definieren, sind in einem grün
   
   </details>
   
@@ -83,13 +84,26 @@ sorry das ich hier so hässlich reinschreibe und alles zerstöre ABER die variab
 In dem gesammten Spiel werden Boolean Variablen verwendet. Diese beziehen sich auf das gesammte Spiel und sind globale Variablen. Dadurch werden sie direkt am Anfang definiert und in allen weiteren Codes verwendet.
 
 ```  
-var Hintergrund2;  
+var Hintergrund_start;  
+var Hintergrund_spiel;  
+var Hintergrund_gemeover;  
+var Hintergrund_pause;  
 
 var Schlaeger_links;  
 var Schlaeger_rechts;  
 var Schlaegergeschwindigkeit = 10;  
 
-var Mittellinie;
+var Mittellinie;  
+
+var Startblock;  
+var New_game_block;  
+var Pauseknopf;  
+
+var Text_start;  
+var Text_gameover;  
+
+var Screen_start_active = Boolean (true);  
+var Screen_spiel_active = Boolean (false);
 ```  
 <hr>
 
