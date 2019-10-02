@@ -103,7 +103,14 @@ var Text_start;
 var Text_gameover;  
 
 var Screen_start_active = Boolean (true);  
-var Screen_spiel_active = Boolean (false);
+var Screen_spiel_active = Boolean (false);  
+var Screen_gameover_active = Boolean (false);  
+var Screen_pause_active = Boolean (false);  
+
+var Screen_changed_start = Boolean (false);  
+var Screen_changed_pause = Boolean (false);  
+var Screen_changed_gameover = Boolean (false);  
+var Screen_changed_neu = Boolean (false);
 ```  
 <hr>
 
