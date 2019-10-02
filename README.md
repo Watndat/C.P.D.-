@@ -47,7 +47,16 @@ Ein altes Spiel, welches aber jeder kennt. **PONG!** Das Spiel ist angelehnt an 
   
 <details>
   <summary>Farbcode</summary>
- Während man auf code.ord programmiert, wird man mit verschidenen typen und farben konfrontiert.
+ Während man auf code.ord programmiert, wird man mit verschidenen typen und farben konfrontiert. Dabei variieren die Farben je nachdem in welcher Sprache man programmiert.  
+  Die Bausteine:
+  * eine programmiete _Funktion_ ist immer grün
+  * ein Baustein, der die _World_ beschreibt und definiert ist immer gelb
+  * ein _Sprite_ oder _Groupe_ ist immer rot
+  * die Bauteine der Kategorie _Drawing_ ist immer hellblau
+  * ein Comment wird grau angezeigt
+  * ein Baustein aus _Kontroll_ ist in einem mittelblau
+  * eine Variable ist lila angezeigt
+  * die Kategorie _Mathe_ ist orange
   
   </details>
   
