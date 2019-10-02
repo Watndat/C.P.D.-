@@ -47,7 +47,8 @@ Ein altes Spiel, welches aber jeder kennt. **PONG!** Das Spiel ist angelehnt an 
   
 <details>
   <summary>Farbcode</summary>
- Während man auf code.ord programmiert, wird man mit verschidenen typen und farben konfrontiert. Dabei variieren die Farben je nachdem in welcher Sprache man programmiert.  
+ Während man auf code.ord programmiert, wird man mit verschidenen typen und farben konfrontiert. Dabei variieren die Farben je nachdem in welcher Sprache man programmiert.
+  
   Die Bausteine:
   * eine programmiete _Funktion_ ist immer grün
   * ein Baustein, der die _World_ beschreibt und definiert ist immer gelb
@@ -57,6 +58,13 @@ Ein altes Spiel, welches aber jeder kennt. **PONG!** Das Spiel ist angelehnt an 
   * ein Baustein aus _Kontroll_ ist in einem mittelblau
   * eine Variable ist lila angezeigt
   * die Kategorie _Mathe_ ist orange
+  
+In diesem Spiel wurde allerdings in Javaskript geschrieben. Auch hier gibt es in code.org einen Farbencode, jedoch unterscheiden sich diese von dem Bausteincode.
+
+  * die Variablen _var_ sowie die Funktionen wie _if_ werden lila angezeigt
+  * _Comments_ sind grün 
+  * variierbare Element wie _Farben_ oder _Positionsangaben_ wreden blau angezeigt
+  * alle aderen _Texte_ sind grau
   
   </details>
   
@@ -71,10 +79,6 @@ Ein altes Spiel, welches aber jeder kennt. **PONG!** Das Spiel ist angelehnt an 
 ## Die Variablen <a name="vier"></a>
 
 sorry das ich hier so hässlich reinschreibe und alles zerstöre ABER die variablen sind alles globale Variablen, das heißt sie müssen nicht in jeder funktion neu benannt werden. Ein teil dieser globalen Variablen sind die Boolean Variablen diese benutzt wir um zwischen den verschiedenen bildschirmen hin und her zuspringen. aber eigentlich sind das auch nur normale variablen, so wie alle anderen auch. deswegen würd ich so was wie "In dem gesammten Spiel werden globale Variablen verwendet. Diese beziehen sich auf das gesammte Spiel und werden am Anfang bestimmt." schreiben.
-
-
-
-
 
 In dem gesammten Spiel werden Boolean Variablen verwendet. Diese beziehen sich auf das gesammte Spiel und sind globale Variablen. Dadurch werden sie direkt am Anfang definiert und in allen weiteren Codes verwendet.
 
