@@ -47,7 +47,7 @@ Ein altes Spiel, welches aber jeder kennt. **PONG!** Das Spiel ist angelehnt an 
   
 <details>
   <summary>Farbcode</summary>
- Während man auf code.ord programmiert, wird man mit verschidenen typen und farben konfrontiert. Dabei variieren die Farben je nachdem in welcher Sprache man programmiert.
+ Während man auf code.ord programmiert, wird man mit verschidenen Typen und Farben konfrontiert. Dabei variieren die Farben je nachdem in welcher Sprache man programmiert.
   
   Die Bausteine:
   * eine programmiete _Funktion_ ist immer grün
@@ -61,11 +61,11 @@ Ein altes Spiel, welches aber jeder kennt. **PONG!** Das Spiel ist angelehnt an 
   
 In diesem Spiel wurde allerdings in Javaskript geschrieben. Auch hier gibt es in code.org einen Farbencode, jedoch unterscheiden sich diese von dem Bausteincode.
 
-  * die Variablen _var_ sowie die Funktionen wie _if_ werden lila angezeigt
+  * die Variablen _var_ sowie die Funktionen wie zum Beispiel _if_ werden lila angezeigt
   * _Comments_ sind grün 
-  * variierbare Element wie _Farben_ oder _Positionsangaben_ wreden blau angezeigt
+  * variierbare Element wie _Farben_ oder _Positionsangaben_ werden blau angezeigt
   * alle aderen _Texte_ sind grau
-  * die Boolean, welche _true und fals_ definieren, sind in einem grün
+  * die Boolean, welche _true_ und _false_ definieren, sind blau
   
   </details>
   
