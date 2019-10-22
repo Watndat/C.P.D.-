@@ -129,7 +129,7 @@ var counter2 = 0;
 ## Der Startbildschirm <a name="fünf"></a>
  
  ![Screenshot_2019-08-28 Bild-Startbildschirm](https://user-images.githubusercontent.com/54102292/63863667-e54c8300-c9ae-11e9-9a05-4cec282734e9.png)
-
+ Neues Bild!!
  
  <details>
   <summary>Hintergrund</summary>
@@ -137,6 +137,10 @@ var counter2 = 0;
   
   ![Screenshot_2019-08-28 Code-Startbildschirm](https://user-images.githubusercontent.com/54102292/63863940-4ffdbe80-c9af-11e9-87ec-1d861c2b6eb7.png)
 
+```  
+//Hintergrund1  
+:: Hintergrund1 = backround("white");  
+```
   </details>
   
 <details>
