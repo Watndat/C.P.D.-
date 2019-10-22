@@ -110,7 +110,18 @@ var Screen_pause_active = Boolean (false);
 var Screen_changed_start = Boolean (false);  
 var Screen_changed_pause = Boolean (false);  
 var Screen_changed_gameover = Boolean (false);  
-var Screen_changed_neu = Boolean (false);
+var Screen_changed_neu = Boolean (false);  
+var Screen_changed_weiter = Boolean (false);  
+
+var Screen_hight;  
+var Scgreen_bottom;  
+var Screen_rand_links;  
+var Screen_rand_rechts;  
+
+var Ball;  
+
+var counter1 = 0;  
+var counter2 = 0;
 ```  
 <hr>
 
