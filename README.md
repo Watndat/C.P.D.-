@@ -81,7 +81,7 @@ Hier in diesem Spiel wird der alte Klassiker PONG aufgegriffen und verbessert. D
  
 ## Die Variablen <a name="vier"></a>
 
-In dem gesammten Spiel werden globale Variablen verwendet. Diese beziehen sich auf das gesammte Spiel und werden sie direkt am Anfang definiert und in allen weiteren Codes verwendet.
+Wir verwenden in unserem Spiel globale Variablen. Das heißt am Anfang werden die unterschiedlichen Variablen defienert. Und dann im weitern Spiel mit den entsprechenden Werten belegt.
 
 ```  
 var Hintergrund_start;  
@@ -134,7 +134,7 @@ var counter2 = 0;
  
  <details>
   <summary>Hintergrund</summary>
-  Hierbei wurde ien weißer Hintergrund mit blauene Großbuchstaben gewählt. Dies steht im Kontrast zu dem Starbutton gebildet, weshalb es für den Spieler ansprechender gestalttet wurde.
+  Hierbei wurde einn weißer Hintergrund mit blauene Großbuchstaben gewählt. Dies steht im Kontrast zu dem Starbutton gebildet, weshalb es für den Spieler ansprechender gestalttet wurde.
   </details>
   
 <details>
