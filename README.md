@@ -119,6 +119,7 @@ var Screen_rand_links;
 var Screen_rand_rechts;  
 
 var Ball;  
+var Ballgeschwindigkeit;   
 
 var counter1 = 0;  
 var counter2 = 0;
