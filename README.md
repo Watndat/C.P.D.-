@@ -134,13 +134,6 @@ var counter2 = 0;
  <details>
   <summary>Hintergrund</summary>
   Hierbei wurde ien weißer Hintergrund mit blauene Großbuchstaben gewählt. Dies steht im Kontrast zu dem Starbutton gebildet, weshalb es für den Spieler ansprechender gestalttet wurde.
-  
-  ![Screenshot_2019-08-28 Code-Startbildschirm](https://user-images.githubusercontent.com/54102292/63863940-4ffdbe80-c9af-11e9-87ec-1d861c2b6eb7.png)
-
-```  
-//Hintergrund1  
-:: Hintergrund1 = backround("white");  
-```
   </details>
   
 <details>
@@ -148,10 +141,34 @@ var counter2 = 0;
   Der Startbildschirm wurde mit einer vorgefertigten Animation aus der Animationsbibliothek von code.org gestallt. Hierbei kann durch einen Mausklick auf den Startbutton der Startbildschirm verlassen wreden und das eigentliche Spielfeld erscheint. Als Design wurde ein schwarzes Rechteck mit weißen Großbuchstaben.
   
   ![Screenshot_2019-08-28 Startbutton-Bild](https://user-images.githubusercontent.com/54102292/63864321-ed58f280-c9af-11e9-909a-866e0d629293.png)
-  
-  ![Screenshot_2019-08-28 Startbutton-Code](https://user-images.githubusercontent.com/54102292/63864378-06fa3a00-c9b0-11e9-8c4e-9fbb9343c465.png)
 
-  </details> <hr>
+  </details> 
+  
+<details> 
+  <summary>Code</summary>  
+  
+  ```
+  //function Screen_start_init  
+  function Screen_start_init() {  
+  
+  //Hintergrund_start 
+      Hintergrund_start = backround("white");  
+      
+  //Text_start  
+      Text_start = textSize(100);  
+      Text_start = textFont("Calibri");  
+      Text_start = fill("blue");  
+      Text_start = text("PONG", 70,200);  
+      
+  //Startblock  
+      Startblock = createSprite (200,285,150,50);  
+      Startblock.x = 200;  
+      Startblock.y = 285;  
+      Startblock.seeAnimation("flatDark41_1");  
+      
+  //Ball
+  ```
+  <hr>
  
  
  ## Das Spielfeld <a name="sechs"></a>
