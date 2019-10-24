@@ -81,7 +81,7 @@ Hier in diesem Spiel wird der alte Klassiker PONG aufgegriffen und verbessert. D
  
 ## Das Grundgerüst <a name="vier"></a>
 
-![grafik](https://user-images.githubusercontent.com/54102292/67488205-b2053800-f66f-11e9-9ccd-a81cbfd02ad0.png)
+![grafik](https://user-images.githubusercontent.com/54102292/67488289-dbbe5f00-f66f-11e9-86dc-4d0ba7639954.png)
 
 
 
