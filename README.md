@@ -81,13 +81,7 @@ Hier in diesem Spiel wird der alte Klassiker PONG aufgegriffen und verbessert. D
  
 ## Das Grundgerüst <a name="vier"></a>
 
-![grafik](https://user-images.githubusercontent.com/54102292/67488289-dbbe5f00-f66f-11e9-86dc-4d0ba7639954.png)
-
-
-
-
-
-Wir verwenden in unserem Spiel globale Variablen. Das heißt am Anfang werden die unterschiedlichen Variablen defienert. Und dann im weitern Spiel mit den entsprechenden Werten belegt.
+In unserem Spiel werden folgende Globale Variablen verwendet. Globale Variablen heißt, sie werden am Anfang des Codes definiert und im weitern Spiel mit Werten belegt.
 
 ```  
 var Hintergrund_start;  
@@ -130,6 +124,81 @@ var Ballgeschwindigkeit;
 var counter1 = 0;  
 var counter2 = 0;
 ```  
+
+Unser Spiel hat verschiedene Zustände, welche im Zustandsdiagramm zusehen sind.
+
+bild Zustandsdiagramm
+
+Zu jedem Zustand gibt es ein Screen, wobei jeder Screen durch eine eigene init initialisiert wird und die Logic in einer jeweilligen Logicfunktion abgearbeitet wird.
+Die einzelnen Zustände, bzw. Screens werden über die Hauptschleife gesteurt. Dies ist möglich durch die Boolean Variablen, die aussagen, ob eine Aussage wahr oder falsch ist. Dadurch ist es möglich, einen Screen als wahr darzustellen, während alle anderen Screens falsch sind, so dass der "wahre" Screen initialisiert wird und auch die Logicfunktion abgearbeitet wird. 
+
+```   
+// function draw (Hauptschleife)
+function draw(){
+
+  if (Screen_start_active) {
+      Screen_start_logic();
+  }
+
+  if (Screen_spiel_active) {
+      Screen_spiel_logic();
+  }
+  
+  if (Screen_gameover_active){
+      Screen_gameover_logic();
+  }
+  
+  if (Screen_pause_active){
+      Screen_pause_logic();
+  }
+
+  if (Screen_changed_start) {
+      Screen_start_destroy();
+      Screen_start_active = false;
+      Screen_spiel_active = true;
+      Screen_spiel_init();
+      Screen_changed_start = false;
+  }
+  
+  if (Screen_changed_pause){
+      Screen_spiel_destroy();
+      Screen_spiel_active = false;
+      Screen_pause_active = true;
+      Screen_pause_init();
+      Screen_changed_pause = false;
+  }
+  
+  if (Screen_changed_weiter){
+      Screen_pause_destroy();
+      Screen_pause_active = false;
+      Screen_spiel_active = true;
+      Screen_spiel_init();
+      Screen_changed_weiter = false;
+      
+  }
+  
+  if (Screen_changed_gameover){
+      Screen_spiel_destroy();
+      Screen_spiel_active = false;
+      Screen_gameover_active = true;
+      Screen_gameover_init();
+      Screen_changed_gameover = false;
+  }  
+  
+  if (Screen_changed_neu){
+      Screen_gameover_destroy ();
+      Screen_gameover_active = false;
+      Screen_spiel_active = true;
+      Screen_spiel_init();
+      Screen_changed_neu = false;
+      counter1 = 0;
+      counter2 = 0;
+  }
+
+drawSprites();
+  
+}
+```   
 <hr>
 
  
@@ -138,8 +207,14 @@ var counter2 = 0;
  ![Screenshot_2019-08-28 Bild-Startbildschirm](https://user-images.githubusercontent.com/54102292/63863667-e54c8300-c9ae-11e9-9a05-4cec282734e9.png)
  Neues Bild!!
  
- Der Code für den Startbildschirm ist einmal in der Funktion Screen_start_init und in der Funktion Screen_start_logic zufinden.
- 
+Der Code für den Startbildschirm ist einmal in der Funktion Screen_start_init und in der Funktion Screen_start_logic zufinden.
+Damit der Startbildschirm sofort zusehen ist, wenn das Programm gestartet wird, wird als erstes der Startbildschirm initialisiert.
+
+```  
+// Screen_start_init
+Screen_start_init();
+```  
+
  <details>
   <summary>Hintergrund</summary>
  In der Funktion Screen_start_init wurde der Hintergrund (Hintergrund_start) als weiß festgelegt. Bei der Schrift (Text_start) wird einmal die Größe, die Schriftart, die Farbe und zum Schluss noch den eigentlichen Text mit der Position, wo dieser stehen soll, festgelgt.
@@ -154,14 +229,21 @@ var counter2 = 0;
       Text_start = fill("blue");  
       Text_start = text("PONG", 70,200);  
   ```
-  
   <hr>
   </details>
   
 <details>
   <summary>Startblock</summary>
- Der Startblock (Startblock) wird in der Funktion Screen_start_init festgelegt. Hierbei wird durch den Befehl "createSprite" festgelegt, wo dieser Startblock liegen soll. Es wird neben der x und y Position auch die Höhe und die Breite festgelgt. Durch den Befehl "setAnimation" wird der Startblock mit der entsprechenden Animation ausgegeben. Die Animation ist bei Code.org in d 
- Der Startbildschirm wurde mit einer vorgefertigten Animation aus der Animationsbibliothek von code.org gestallt. Hierbei kann durch einen Mausklick auf den Startbutton der Startbildschirm verlassen wreden und das eigentliche Spielfeld erscheint. Als Design wurde ein schwarzes Rechteck mit weißen Großbuchstaben gewählt. Der Startbutton wird bei Startblock festgelgt. Der Mausklick auf dem Startbutton wird 
+Der Startblock (Startblock) wird ebenfalls in der Funktion Screen_start_init festgelegt. Hierbei wird durch den Befehl "createSprite" festgelegt, wo dieser Startblock liegen soll. Es wird neben der x und y Position auch die Höhe und die Breite festgelgt. Durch den Befehl "setAnimation" wird der Startblock mit der entsprechenden Animation ausgegeben. Die Animation ist bei Code.org im Zeichentrickbereich hinterlegt.
+
+```
+ //Startblock  
+      Startblock = createSprite (200,285,150,50);  
+      Startblock.seeAnimation("flatDark41_1");  
+```
+In der Logicfunktion .....
+
+Der Startbildschirm wurde mit einer vorgefertigten Animation aus der Animationsbibliothek von code.org gestallt. Hierbei kann durch einen Mausklick auf den Startbutton der Startbildschirm verlassen wreden und das eigentliche Spielfeld erscheint. Als Design wurde ein schwarzes Rechteck mit weißen Großbuchstaben gewählt. Der Startbutton wird bei Startblock festgelgt. Der Mausklick auf dem Startbutton wird 
   
   ![Screenshot_2019-08-28 Startbutton-Bild](https://user-images.githubusercontent.com/54102292/63864321-ed58f280-c9af-11e9-909a-866e0d629293.png)
 
