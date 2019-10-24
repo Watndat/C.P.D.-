@@ -132,14 +132,30 @@ var counter2 = 0;
  ![Screenshot_2019-08-28 Bild-Startbildschirm](https://user-images.githubusercontent.com/54102292/63863667-e54c8300-c9ae-11e9-9a05-4cec282734e9.png)
  Neues Bild!!
  
+ Der Code für den Startbildschirm ist einmal in der Funktion Screen_start_init und in der Funktion Screen_start_logic zufinden.
+ 
  <details>
   <summary>Hintergrund</summary>
-  Hierbei wurde einn weißer Hintergrund mit blauene Großbuchstaben gewählt. Dies steht im Kontrast zu dem Starbutton gebildet, weshalb es für den Spieler ansprechender gestalttet wurde.
+ In der Funktion Screen_start_init wurde der Hintergrund (Hintergrund_start) als weiß festgelegt. Bei der Schrift (Text_start) wird einmal die Größe, die Schriftart, die Farbe und zum Schluss noch den eigentlichen Text mit der Position, wo dieser stehen soll, festgelgt.
+  
+   ```
+  //Hintergrund_start 
+      Hintergrund_start = backround("white");  
+      
+  //Text_start  
+      Text_start = textSize(100);  
+      Text_start = textFont("Calibri");  
+      Text_start = fill("blue");  
+      Text_start = text("PONG", 70,200);  
+  ```
+  
+  <hr>
   </details>
   
 <details>
-  <summary>Startbutton</summary>
-  Der Startbildschirm wurde mit einer vorgefertigten Animation aus der Animationsbibliothek von code.org gestallt. Hierbei kann durch einen Mausklick auf den Startbutton der Startbildschirm verlassen wreden und das eigentliche Spielfeld erscheint. Als Design wurde ein schwarzes Rechteck mit weißen Großbuchstaben.
+  <summary>Startblock</summary>
+ Der Startblock (Startblock) wird in der Funktion Screen_start_init festgelegt. Hierbei wird durch den Befehl "createSprite" festgelegt, wo dieser Startblock liegen soll. Es wird neben der x und y Position auch die Höhe und die Breite festgelgt. Durch den Befehl "setAnimation" wird der Startblock mit der entsprechenden Animation ausgegeben. Die Animation ist bei Code.org in d 
+ Der Startbildschirm wurde mit einer vorgefertigten Animation aus der Animationsbibliothek von code.org gestallt. Hierbei kann durch einen Mausklick auf den Startbutton der Startbildschirm verlassen wreden und das eigentliche Spielfeld erscheint. Als Design wurde ein schwarzes Rechteck mit weißen Großbuchstaben gewählt. Der Startbutton wird bei Startblock festgelgt. Der Mausklick auf dem Startbutton wird 
   
   ![Screenshot_2019-08-28 Startbutton-Bild](https://user-images.githubusercontent.com/54102292/63864321-ed58f280-c9af-11e9-909a-866e0d629293.png)
 
@@ -166,6 +182,26 @@ var counter2 = 0;
       Startblock.seeAnimation("flatDark41_1");  
       
   //Ball
+      createEdgeSprite();
+      Ball = createSprite();
+        Ball.x = 200;
+        Ball.y = 200;
+        Ball.width = 15;
+        Ball.height = 15;
+        Ball.shapeColor = "red";
+  
+  // Screen_height_start
+      Screen_height = 0;
+  
+  // Screen_width_start
+      Screen_bottom = World.height;
+  
+  // Screen_rand_links
+      Screen_rand_links = 0;
+  
+  // Screen_rand_rechts
+      Screen_rand_rechts = World.width;
+  }
   ```
   <hr>
  
