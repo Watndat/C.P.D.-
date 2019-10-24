@@ -81,7 +81,11 @@ Hier in diesem Spiel wird der alte Klassiker PONG aufgegriffen und verbessert. D
  
 ## Das Grundgerüst <a name="vier"></a>
 
-![grafik](https://user-images.githubusercontent.com/54102292/67488003-44590c00-f66f-11e9-812c-57cd2177f2ed.png)
+![grafik](https://user-images.githubusercontent.com/54102292/67488205-b2053800-f66f-11e9-9ccd-a81cbfd02ad0.png)
+
+
+
+
 
 Wir verwenden in unserem Spiel globale Variablen. Das heißt am Anfang werden die unterschiedlichen Variablen defienert. Und dann im weitern Spiel mit den entsprechenden Werten belegt.
 
