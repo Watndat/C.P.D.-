@@ -163,8 +163,6 @@ var counter2 = 0;
       
   //Startblock  
       Startblock = createSprite (200,285,150,50);  
-      Startblock.x = 200;  
-      Startblock.y = 285;  
       Startblock.seeAnimation("flatDark41_1");  
       
   //Ball
