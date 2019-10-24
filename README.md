@@ -8,7 +8,7 @@
 
 [Das Spiel](#drei)
 
-[Die Variablen](#vier)
+[Das Grundgerüst](#vier)
 
 [Der Startbildschirm](#fünf)
 
@@ -79,7 +79,8 @@ Hier in diesem Spiel wird der alte Klassiker PONG aufgegriffen und verbessert. D
  <hr>
  
  
-## Die Variablen <a name="vier"></a>
+## Das Grundgerüst <a name="vier"></a>
+
 
 Wir verwenden in unserem Spiel globale Variablen. Das heißt am Anfang werden die unterschiedlichen Variablen defienert. Und dann im weitern Spiel mit den entsprechenden Werten belegt.
 
