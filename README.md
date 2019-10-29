@@ -218,7 +218,7 @@ Screen_start_init();
 ```  
 
  <details>
-  <summary>Hintergrund</summary>
+  <summary>function Screen_start_init</summary>
  In der Funktion Screen_start_init wurde der Hintergrund (Hintergrund_start) als weiß festgelegt. Bei der Schrift (Text_start) wird einmal die Größe, die Schriftart, die Farbe und zum Schluss noch den eigentlichen Text mit der Position, wo dieser stehen soll, festgelgt.
   
    ```
@@ -231,26 +231,62 @@ Screen_start_init();
       Text_start = fill("blue");  
       Text_start = text("PONG", 70,200);  
   ```
-  <hr>
-  </details>
-  
-<details>
-  <summary>Startblock</summary>
-Der Startblock (Startblock) wird ebenfalls in der Funktion Screen_start_init festgelegt. Hierbei wird durch den Befehl "createSprite" festgelegt, wo dieser Startblock liegen soll. Es wird neben der x und y Position auch die Höhe und die Breite festgelgt. Durch den Befehl "setAnimation" wird der Startblock mit der entsprechenden Animation ausgegeben. Die Animation ist bei Code.org im Zeichentrickbereich hinterlegt.
+  ---
+ Der Startblock (Startblock) wird ebenfalls in der Funktion Screen_start_init festgelegt. Hierbei wird durch den Befehl "createSprite" festgelegt, wo dieser Startblock liegen soll. Es wird neben der x und y Position auch die Höhe und die Breite festgelgt. Durch den Befehl "setAnimation" wird der Startblock mit der entsprechenden Animation ausgegeben. Die Animation ist bei Code.org im Zeichentrickbereich hinterlegt.
 
 ```
  //Startblock  
       Startblock = createSprite (200,285,150,50);  
       Startblock.seeAnimation("flatDark41_1");  
 ```
-In der Logicfunktion .....
+---
+Der Ball welcher auf dem Startbildschirm "herumfliegt" wird ebenfals in dieser Funktion definiert. Hierbei wird einmal festgelgt das der Ball ein "EdgeSprite" ist, das bedeutet das sobald er eine Bildschirmseite berührt abprallt. Dies ist ein vorgefertigter Befehl von Code.org. Auch hier haben wir wieder ein Sprite definiert mit einer x,y Koordinate. Ebenfalls haben wir die Weite und Höhe des Balles definiert und auch eine Farbe.
+Damit der Ball sich bewegt, haben wir ebenfalls einen vorgefertigten Befehl von Code.org benutzt. Dieser heißt "Ball.velocity" wobei dann immer die jeweillige Achse mit rangehängt wird (Ball.velocityX). Damit wird die Geschwindigkeit in x- oder y- Richtung bestimmt.
 
-Der Startbildschirm wurde mit einer vorgefertigten Animation aus der Animationsbibliothek von code.org gestallt. Hierbei kann durch einen Mausklick auf den Startbutton der Startbildschirm verlassen wreden und das eigentliche Spielfeld erscheint. Als Design wurde ein schwarzes Rechteck mit weißen Großbuchstaben gewählt. Der Startbutton wird bei Startblock festgelgt. Der Mausklick auf dem Startbutton wird 
+```
+//Ball
+    createEdgeSprites();
+    Ball = createSprite ();
+      Ball.x = 200;
+      Ball.y = 200;
+      Ball.width = 15;
+      Ball.height = 15;
+      Ball.shapeColor = "red";
+      
+      Ball.velocityX = 8;
+      Ball.velocityY = 5;
+  ``` 
+  ---
+Desweitern haben wir in dieser Funktion auch die Bildschirmgrenze definiert. Diese haben wir in Abhängikeit zur Spielfeldgröße gesetzt. Somit ist es egal, in welcher Größe das Spielfeld angezeigt wird. Dies haben wir mit dem Befehl World.height, bzw. World.width gemacht.
+  ```
+//Screen_height_start
+    Screen_height = 0;
+
+//Screen_bottom_start
+    Screen_bottom = World.height;
+      
+//Screen_Rand_links
+    Screen_rand_links = 0;
+      
+//Screen_Rand_rechts
+    Screen_rand_rechts = World.width;
+```
+---
+    
   
   ![Screenshot_2019-08-28 Startbutton-Bild](https://user-images.githubusercontent.com/54102292/63864321-ed58f280-c9af-11e9-909a-866e0d629293.png)
 
   </details> 
+
+<details>
+  <summary>function_screen_start_destroy</summary>
   
+  
+  
+  
+  
+  
+  </details>
 <details> 
   <summary>Code</summary>  
   
