@@ -1,4 +1,4 @@
-# Projekt-im-Informatikkurs
+# C.P.D. - das fun/tastische, farbbenfrohe, digitale Pong Spiel!
 
 ## Von der Idee zum Spiel
 
