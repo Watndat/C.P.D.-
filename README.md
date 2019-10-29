@@ -199,6 +199,8 @@ drawSprites();
   
 }
 ```   
+Zu jedem Screen gibt es eine eigene if-Funktion. Das heißt wenn die Aussage Screen_start_active "wahr" ist, so wird die Funktion Screen_start_logic abgearbeitet. Dadurch kann zwischen den verschiedenen Screens gewechselt werden. 
+
 <hr>
 
  
