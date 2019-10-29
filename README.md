@@ -242,12 +242,11 @@ Screen_start_init();
       Startblock.seeAnimation("flatDark41_1");  
 ```
 ---
-Der Ball welcher auf dem Startbildschirm "herumfliegt" wird ebenfals in dieser Funktion definiert. Hierbei wird einmal festgelgt das der Ball ein "EdgeSprite" ist, das bedeutet das sobald er eine Bildschirmseite berührt abprallt. Dies ist ein vorgefertigter Befehl von Code.org. Auch hier haben wir wieder ein Sprite definiert mit einer x,y Koordinate. Ebenfalls haben wir die Weite und Höhe des Balles definiert und auch eine Farbe.
+Der Ball welcher auf dem Startbildschirm "herumfliegt" wird ebenfals in dieser Funktion definiert. Auch hier haben wir wieder ein Sprite definiert mit einer x,y Koordinate. Ebenfalls haben wir die Weite und Höhe des Balles definiert und auch eine Farbe.
 Damit der Ball sich bewegt, haben wir ebenfalls einen vorgefertigten Befehl von Code.org benutzt. Dieser heißt "Ball.velocity" wobei dann immer die jeweillige Achse mit rangehängt wird (Ball.velocityX). Damit wird die Geschwindigkeit in x- oder y- Richtung bestimmt.
 
 ```
 //Ball
-    createEdgeSprites();
     Ball = createSprite ();
       Ball.x = 200;
       Ball.y = 200;
@@ -299,7 +298,7 @@ function Screen_start_destroy (){
 <details>
   <summary>function Screen_start_logic</summary>
   
-  In der Logicfunction 
+  In der Logicfunktion, haben wir mit if-Funktion gearbeitet.
   
   
   
