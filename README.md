@@ -1,4 +1,4 @@
-# C.P.D. - das fun/tastische, farbbenfrohe, digitale Pong Spiel!
+# C.P.D. - das fun/tastische, farbenfrohe, digitale Pong Spiel!
 
 ## Von der Idee zum Spiel
 
