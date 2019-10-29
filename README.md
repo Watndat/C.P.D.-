@@ -283,7 +283,23 @@ Desweitern haben wir in dieser Funktion auch die Bildschirmgrenze definiert. Die
 <details>
   <summary>function_screen_start_destroy</summary>
   
+ In werden alle Angaben, welche wir in Screen_start_init gemacht haben "zerstört". Das heißt sie werden nicht mehr auf dem Bildschirm angezeigt, können aber falls man wieder in Screen_start_init kommt, wiederhergestellt werden. Diese Funktion brauchen wir, um zwischen den einzelnen Screens wechseln zu können.
+ 
+``` 
+function Screen_start_destroy (){
+ 
+    Hintergrund_start.destroy;
+    Text_start.destroy;
+    Startblock.destroy();
+    Ball.destroy();
+}
+``` 
+</details>
+
+<details>
+  <summary>function Screen_start_logic</summary>
   
+  In der Logicfunction 
   
   
   
