@@ -219,6 +219,8 @@ Screen_start_init();
 
  <details>
   <summary>function Screen_start_init</summary>
+ 
+ 
  In der Funktion Screen_start_init wurde der Hintergrund (Hintergrund_start) als weiß festgelegt. Bei der Schrift (Text_start) wird einmal die Größe, die Schriftart, die Farbe und zum Schluss noch den eigentlichen Text mit der Position, wo dieser stehen soll, festgelgt.
   
    ```
@@ -287,48 +289,7 @@ Desweitern haben wir in dieser Funktion auch die Bildschirmgrenze definiert. Die
   
   
   </details>
-<details> 
-  <summary>Code</summary>  
-  
-  ```
-  //function Screen_start_init  
-  function Screen_start_init() {  
-  
-  //Hintergrund_start 
-      Hintergrund_start = backround("white");  
-      
-  //Text_start  
-      Text_start = textSize(100);  
-      Text_start = textFont("Calibri");  
-      Text_start = fill("blue");  
-      Text_start = text("PONG", 70,200);  
-      
-  //Startblock  
-      Startblock = createSprite (200,285,150,50);  
-      Startblock.seeAnimation("flatDark41_1");  
-      
-  //Ball
-      createEdgeSprite();
-      Ball = createSprite();
-        Ball.x = 200;
-        Ball.y = 200;
-        Ball.width = 15;
-        Ball.height = 15;
-        Ball.shapeColor = "red";
-  
-  // Screen_height_start
-      Screen_height = 0;
-  
-  // Screen_width_start
-      Screen_bottom = World.height;
-  
-  // Screen_rand_links
-      Screen_rand_links = 0;
-  
-  // Screen_rand_rechts
-      Screen_rand_rechts = World.width;
-  }
-  ```
+
   <hr>
  
  
