@@ -278,7 +278,48 @@ Desweitern haben wir in dieser Funktion auch die Bildschirmgrenze definiert. Die
   ![Screenshot_2019-08-28 Startbutton-Bild](https://user-images.githubusercontent.com/54102292/63864321-ed58f280-c9af-11e9-909a-866e0d629293.png)
 
   </details> 
+  
+<details>
+  <summary>function Screen_start_logic</summary>
+  
+  Als erstes haben wir nochmal den Hintergrund und den Text definiert, damit der Ball welcher über den Bildschirm fliegt auch zu sehen ist und es nicht zu einer langen Reihe an Bällen kommt.
+  Damit der Ball am Bildschirm Rand abprallt, haben wir if Funktion definiert. Die besagen, dass wenn der Ball den Bildschirmrand berührt, die Ballgeschwindigkeit (Ball.velocity) sich vom Vorzeichen her umdreht (mal -1). Dadurch verändert sich der X- bzw. Y-Wert, undsomit die Richtung des Balles. Dies haben wir bei allen vier Bildschirmrändern getan.  
+  ```
+//Ball.isTouching Screen_height
+  if (Ball.y < Screen_height){
+      Ball.velocityY = -1*Ball.velocityY;
+  }
+  
+//Ball.isTouching Screen_bottom
+  if (Ball.y > Screen_bottom){
+      Ball.velocityY = -1*Ball.velocityY;
+  }
 
+// Ball.x < Screen_rand_links 
+ if (Ball.x < Screen_rand_links){
+      Ball.velocityX = -1*Ball.velocityX;
+  }
+
+// Ball.x > Screen_rand_rechts 
+  if (Ball.x > Screen_rand_rechts){
+      Ball.velocityX = -1*Ball.velocityX;
+  }
+```
+---
+
+Damit das Spiel gestartet werden kann, haben wir den Startblock. Wenn man auf diesen mit der Maus klickt, erklingt ein Sound, welchen wir aus der Soundbibliothek von Code.org haben. Desweitern wird definiert, das die Aussage Screen_changed_start "wahr" ist. Dadurch "springt" der Computer wieder in die Hauptschleife, um dort die if-Funktion für Screen_changed_start auszuführen.
+
+```
+// mousePressedOver (Startblock)
+  if (mousePressedOver(Startblock)){
+      Screen_changed_start=true;
+      playSound ("https://audio.code.org/start1.mp3");
+  }
+```
+  </details>
+
+  <hr>
+  
 <details>
   <summary>function_screen_start_destroy</summary>
   
@@ -295,18 +336,6 @@ function Screen_start_destroy (){
 ``` 
 </details>
 
-<details>
-  <summary>function Screen_start_logic</summary>
-  
-  In der Logicfunktion, haben wir mit if-Funktion gearbeitet.
-  
-  
-  
-  
-  </details>
-
-  <hr>
- 
  
  ## Das Spielfeld <a name="sechs"></a>
  
