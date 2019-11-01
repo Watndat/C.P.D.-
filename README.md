@@ -342,8 +342,6 @@ function Screen_start_destroy (){
 Durch die Hauptschleife kommt man nun in die init-Funktion vom "Spiel". Als erstes haben wir wieder den Hintergrund (Hintergrund_spiel) defieniert. Hier haben wir uns für Grün entschieden, da wir somit eine Tischtennisplatten emittieren können. Desweitern haben wir noch eine Mittellinie (Mittellinie) definiert, damit die Spieler besser in die zwei Hälften unterscheiden können.
   
   ```
-  function Screen_spiel_init(){
-  
 // Hintergrund_Spiel
     Hintergrund_spiel = background("green");
 
@@ -356,6 +354,7 @@ Durch die Hauptschleife kommt man nun in die init-Funktion vom "Spiel". Als erst
 
 Die Schläger (Schlaeger_rechts / Schlaeger_links) haben wir wieder durch den Befehl createSprite programmiert. Die Schläger haben wir in Abhängigkeit zur Bildschirmgröße gesetzt, damit es egal ist, wie groß dieser später ist. Dies haben wir durch die World.height / bzw. World.width gemacht. So ist die Höhe der Schläger zum Beispiel ein achtel der Bildschirmgröße (World.width/8). So ist gewährleistet, dass der Schläger nicht zu klein, zu groß, zu breit, zu dünn für den Bildschrim ist. Auch haben wir die Position in Abhängigkeit zur Bildschirmgröße gestzt, so dass der Abstand zum Bildschirmrand immer gleich ist.
 Die Schläger haben wir mit unterschiedlichen Farben belegt, damit man diese besser auseinanderhalten kann und die Spieler so einer Farbe zugewiesen werden.
+
 ```
 //Schläger_rechts
     Schlaeger_rechts = createSprite ();
@@ -376,8 +375,8 @@ Die Schläger haben wir mit unterschiedlichen Farben belegt, damit man diese bes
 --- 
 Auch in dieser Funktion haben wir die Spielgröße definiert, allerdings anders als beim Startbildschirm. Die Ränder Links und Rechts (Screen_rand_links / Screen_rand_rechts) sind gleich geblieben. Die Höhe des Spielfeldes haben wir mit der Schlägergröße in Zusammenhang gesetzt. Da die normale Höhe in unserem Fall 0 ist, haben wir hier die Schlägergröße durch zwei grechnet, damit der Schläger nicht zur Hälfte verschwindet, da der Fixpunkt des Schläger die Mitte ist, wenn man ihn nach oben bewegt. Die Unterseite des Spielfeldes, haben wir durch die Bildschirmgröße (World.height) minus die Schlägergröße (Schlaeger_links.height)
 durch zwei definiert. Dadurch verschwindet der Schläger beim runterbewegen auch nicht zur Hälfte, aufgrund des Fixpunktes in der Mitte des Schlägers.
-```
-      
+
+```   
 //Screen_height_spiel = (Schlägergröße / 2)
     Screen_height = (Schlaeger_links.height / 2);
 
@@ -393,8 +392,8 @@ durch zwei definiert. Dadurch verschwindet der Schläger beim runterbewegen auch
 ---
 
 Den Spielball haben wir wie in der Funktion Screen_start_init definiert. Durch createSprite und die jeweilligen Größenangaben und Koordinaten. Diese mal haben wir den Ball mit der Farbe weiß belegt, damit er angepasst zum restlichen Spiel ist.
-```
 
+```
 //Ball
     Ball = createSprite ();
       Ball.x = 200;
@@ -404,22 +403,23 @@ Den Spielball haben wir wie in der Funktion Screen_start_init definiert. Durch c
       Ball.shapeColor = "white" ;
 ```
 Die Ballgeschwindigkeit, wird hier zufällig gewählt. Dies haben wir durch ein Funktion (function zufaellige_zahl) ausgedrückt. Hierbei wird für die Geschwindigkeit und Richtung eine zufällige Zahl zwischen -8 und 8 (randomNumber (-8,8)) vom Computer ausgewählt. Wenn diese bei der X-Koordinate allerdings null beträgt, greift die if-funktion Ball.velocityX = 0. Dort wird die Geschwindigkeit mit einer festen Zahl belegt. Dies haben wir gemacht, damit der Ball nicht in der Mitte des Spielfeldes sich nur nach oben und unten bewegt.
+
 ```
-    Ballgeschwindigkeit = zufaellige_zahl();
-    
-      function zufaellige_zahl (){
-        Ball.velocityY = randomNumber (-8,8);
-        Ball.velocityX = randomNumber (-8,8);
-        if (Ball.velocityX == 0){
-            Ball.velocityX = 3.5;
-        }
-      }
+Ballgeschwindigkeit = zufaellige_zahl();
+  function zufaellige_zahl (){
+    Ball.velocityY = randomNumber (-8,8);
+    Ball.velocityX = randomNumber (-8,8);
+    if (Ball.velocityX == 0){
+      Ball.velocityX = 3.5;
+    }
+  }
 ```
   </details>
   
 <details>
   <summary>Screen_spiel_logic</summary>
-  
+Auch hier haben wir den Hintergrund und die Mittellinie nochmals definiert, damit der Ball sich auch wirklich bewegt und es sich nicht mehrer Bälle bilden.
+Desweitern haben wir hier den Spielstand (counter1 /counter2) eingefügt, dieser ist eine Variable, welche wir am Anfang mit null belegt haben. Diese Variablen wird nun durch den Befehl text angezeigt.  
   
   </details>
   
