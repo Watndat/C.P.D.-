@@ -317,8 +317,6 @@ Damit das Spiel gestartet werden kann, haben wir den Startblock. Wenn man auf di
   }
 ```
   </details>
-
-  <hr>
   
 <details>
   <summary>function_screen_start_destroy</summary>
@@ -340,30 +338,96 @@ function Screen_start_destroy (){
  ## Das Spielfeld <a name="sechs"></a>
  
  <details>
-  <summary>Hintergrund und Mittellinie</summary>
-  Der Hintergrund ist in einem einnafchen grau gehlten, damit alle weiteren Inhalte besser zu sehen ist.
+  <summary>function Screen_spiel_init</summary>
+Durch die Hauptschleife kommt man nun in die init-Funktion vom "Spiel". Als erstes haben wir wieder den Hintergrund (Hintergrund_spiel) defieniert. Hier haben wir uns für Grün entschieden, da wir somit eine Tischtennisplatten emittieren können. Desweitern haben wir noch eine Mittellinie (Mittellinie) definiert, damit die Spieler besser in die zwei Hälften unterscheiden können.
+  
+  ```
+  function Screen_spiel_init(){
+  
+// Hintergrund_Spiel
+    Hintergrund_spiel = background("green");
 
-  ![Screenshot_2019-08-28 Mittellinie-Hintergrund-Code](https://user-images.githubusercontent.com/54102292/63867479-32cbee80-c9b5-11e9-8251-13f84a6361c0.png)
+// Mittellinie
+    Mittellinie = stroke("yellow");
+    Mittellinie = strokeWeight("1");
+    Mittellinie = line(World.wdith/2,World.height);
+```
+--- 
+
+Die Schläger (Schlaeger_rechts / Schlaeger_links) haben wir wieder durch den Befehl createSprite programmiert. Die Schläger haben wir in Abhängigkeit zur Bildschirmgröße gesetzt, damit es egal ist, wie groß dieser später ist. Dies haben wir durch die World.height / bzw. World.width gemacht. So ist die Höhe der Schläger zum Beispiel ein achtel der Bildschirmgröße (World.width/8). So ist gewährleistet, dass der Schläger nicht zu klein, zu groß, zu breit, zu dünn für den Bildschrim ist. Auch haben wir die Position in Abhängigkeit zur Bildschirmgröße gestzt, so dass der Abstand zum Bildschirmrand immer gleich ist.
+Die Schläger haben wir mit unterschiedlichen Farben belegt, damit man diese besser auseinanderhalten kann und die Spieler so einer Farbe zugewiesen werden.
+```
+//Schläger_rechts
+    Schlaeger_rechts = createSprite ();
+      Schlaeger_rechts.x = World.height/1.08;
+      Schlaeger_rechts.y = World.height/2;
+      Schlaeger_rechts.width = World.width/40;
+      Schlaeger_rechts.height = World.width/8;
+      Schlaeger_rechts.shapeColor = "blue";
+
+//Schläger_links
+    Schlaeger_links = createSprite();
+      Schlaeger_links.x = World.height/13.33;
+      Schlaeger_links.y = World.height/2;
+      Schlaeger_links.width = World.width/40;
+      Schlaeger_links.height = World.height/8;
+      Schlaeger_links.shapeColor = "red";
+```
+--- 
+Auch in dieser Funktion haben wir die Spielgröße definiert, allerdings anders als beim Startbildschirm. Die Ränder Links und Rechts (Screen_rand_links / Screen_rand_rechts) sind gleich geblieben. Die Höhe des Spielfeldes haben wir mit der Schlägergröße in Zusammenhang gesetzt. Da die normale Höhe in unserem Fall 0 ist, haben wir hier die Schlägergröße durch zwei grechnet, damit der Schläger nicht zur Hälfte verschwindet, da der Fixpunkt des Schläger die Mitte ist, wenn man ihn nach oben bewegt. Die Unterseite des Spielfeldes, haben wir durch die Bildschirmgröße (World.height) minus die Schlägergröße (Schlaeger_links.height)
+durch zwei definiert. Dadurch verschwindet der Schläger beim runterbewegen auch nicht zur Hälfte, aufgrund des Fixpunktes in der Mitte des Schlägers.
+```
+      
+//Screen_height_spiel = (Schlägergröße / 2)
+    Screen_height = (Schlaeger_links.height / 2);
+
+//Screen_bottom_spiel = Bildschirmgröße - (Schlägergröße / 2)
+    Screen_bottom = World.height - (Schlaeger_links.height / 2); 
+      
+//Screen_Rand_links
+    Screen_rand_links = 0;
+      
+//Screen_Rand_rechts
+    Screen_rand_rechts = World.width;
+```
+---
+
+Den Spielball haben wir wie in der Funktion Screen_start_init definiert. Durch createSprite und die jeweilligen Größenangaben und Koordinaten. Diese mal haben wir den Ball mit der Farbe weiß belegt, damit er angepasst zum restlichen Spiel ist.
+```
+
+//Ball
+    Ball = createSprite ();
+      Ball.x = 200;
+      Ball.y = 200;
+      Ball.width = 15;
+      Ball.height = 15;
+      Ball.shapeColor = "white" ;
+```
+Die Ballgeschwindigkeit, wird hier zufällig gewählt. Dies haben wir durch ein Funktion (function zufaellige_zahl) ausgedrückt. Hierbei wird für die Geschwindigkeit und Richtung eine zufällige Zahl zwischen -8 und 8 (randomNumber (-8,8)) vom Computer ausgewählt. Wenn diese bei der X-Koordinate allerdings null beträgt, greift die if-funktion Ball.velocityX = 0. Dort wird die Geschwindigkeit mit einer festen Zahl belegt. Dies haben wir gemacht, damit der Ball nicht in der Mitte des Spielfeldes sich nur nach oben und unten bewegt.
+```
+    Ballgeschwindigkeit = zufaellige_zahl();
+    
+      function zufaellige_zahl (){
+        Ball.velocityY = randomNumber (-8,8);
+        Ball.velocityX = randomNumber (-8,8);
+        if (Ball.velocityX == 0){
+            Ball.velocityX = 3.5;
+        }
+      }
+```
+  </details>
+  
+<details>
+  <summary>Screen_spiel_logic</summary>
+  
   
   </details>
   
 <details>
-  <summary>Schläger</summary>
-  Die Schläger können durch Tastenkombinationen bewegt wreden. Der Rechte, also blaue, Schläger wird durch die Pfeilentaste "Hoch" und "Runter" bewegt. Der Linke, also rote, Schläger kann durch "W" hoch und durch "S" runter bewegt werden. Beide Schläger steoppen am Ende des Spielfeldes. 
-  Die Mittelinie ist für den Spieler eingezeichent worde. Dadurch lässt leichter die eigene Hälfte erkennen. Sie hat dadurch für die Grundfunktionen keine Funktion.
-  
-  (Code einfügen)
+  <summary>function Screen_spiel_destroy</summary>
   
   </details>
   
-<details>
-  <summary>Ball</summary>
-  
-  </details>
-  
-<details>
-  <summary>Zählstand</summary>
-  
-  </details>
+
   
   
