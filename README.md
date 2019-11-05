@@ -419,7 +419,109 @@ Ballgeschwindigkeit = zufaellige_zahl();
 <details>
   <summary>Screen_spiel_logic</summary>
 Auch hier haben wir den Hintergrund und die Mittellinie nochmals definiert, damit der Ball sich auch wirklich bewegt und es sich nicht mehrer Bälle bilden.
-Desweitern haben wir hier den Spielstand (counter1 /counter2) eingefügt, dieser ist eine Variable, welche wir am Anfang mit null belegt haben. Diese Variablen wird nun durch den Befehl text angezeigt.  
+Desweitern haben wir hier den Spielstand (counter1 /counter2) eingefügt, dieser ist eine Variable, welche wir bei den globalen Variablen mit null belegt haben. Diese Variablen wird nun durch den Befehl text angezeigt. 
+ 
+```
+// Hintergrund2
+    Hintergrund_spiel = background("green");
+
+// Mittellinie
+    Mittellinie = stroke("white");
+    Mittellinie = strokeWeight("5");
+    Mittellinie = line(200,0,200,400);
+
+//Counter 
+    fill ("white");
+    text(counter1,130,80);
+    text(counter2,220,80);
+```
+---
+Damit der Ball während des Spieles, dass heißt zwischen zwei Punkten, nicht bei der gleichen Geschwindigkeit bleibt, haben wir den Ball so programmiert, dass dieser mit der Zeit schneller wird. Allerdings nimmt er eher langsam an Geschwindigkeit zu, damit er falls der Ball grundsätzlich eher schneller ist nicht zu schnell wird. Das schnellerwerden haben wir durch den Befehl Ball.getSpeedAndDirection programmiert. Hierbei wird die Geschwindigkeit immer um 0,005 erhöht und die Richtung bleibt gleich.
+
+```
+//Ball wird schneller
+    Ball.setSpeedAndDirection(Ball.getSpeed()+0.005,Ball.getDirection()+0);
+ ``` 
+ --- 
+ Wenn der x-Koordinate des Balles (Ball.x) größer ist als der Wert für den linken Bildschrimrand (Scree_rand_links), wird der entsprechende Zählstand um eins ehöt und der Ball wird wieder in der Mitte des Spielfeldes angezeigt.
+Der Zählstand wird um eins erhöt, in dem beim entsprechenden Counter +1 gerechnet wird. 
+Beim Ball werden x- und y-Koordinaten festgelegt, wo dieser wieder auftauchen soll, nach dem er über den Bildschirmrand geflogen ist. Damit der Ball nicht immer in die gleiche Richtung fliegt und auch nicht immer die gleiche Geschwindigkeit hat, haben wir diese (Ball.velocity) wieder mit einer zufälligen Zahl (randomNumber) belegt. Dabei haben wir den Zahlenbereich immer so festgelgt, dass der Ball auf die Spielhälfte fliegt, als ob der Spieler der ein Punkt gemacht hat, einen Aufschlag ausführen würde. Das heißt, beim linken Rand ist der Bereich der x-Geschwindigeit -8 bis -4 und die y-Geschwindigkeit -8 bis 8. Somit fliegt der Ball zuerst in die linke Spielfeldhälfte. Allerdings immer in einem anderen Winkel, so dass dies nicht absehbar ist. Beim rechten Spielfeldrand ist es genauso, nur das der Bereich der x-Geschwindigkeit 4 bis 8 ist und die y-Geschwindigkeit einen Bereich von -8 bis 8 hat.
+
+```
+// Ball.x < Screen_rand_links counter2  
+   if (Ball.x < Screen_rand_links){
+  
+      Ball.velocityX = randomNumber (-8,-4);
+      Ball.velocityY = randomNumber (-8,8);
+      Ball.x = 200;
+      Ball.y = 200;
+      counter2 += 1;
+  }
+
+// Ball.x > Screen_rand_rechts counter1 
+  if (Ball.x > Screen_rand_rechts){
+    
+      Ball.velocityX = randomNumber (4,8);
+      Ball.velocityY = randomNumber (-8,8);
+      Ball.x = 200;
+      Ball.y = 200;
+      counter1 += 1;
+  }
+  ```
+  --- 
+  Auch haben wir einen "Drall" des Balles programmiert. Wenn der Schläger sich bewegt, während der Ball diesen trifft, prallt er in einem anderen Winkel ab, als wenn der Schläger sich nicht bewegen würde. Das heißt damit dieser Drall durchgeführt wird, müssen die Bedingungen, dass der Schläger sich bewegt und das der Ball den Schläger brührt, beide erfüllt sein. Dies haben wir durch eine if-Funktion definiert. Wenn diese Bedingungen beide erfüllt werden, wird die y-Geschwindigkeit (Ball.velocityY) des Balles - bzw. + 1,5 gerechnet. - wird gerechnet, wenn der Schläger sich nach oben bewegt und + wenn der Schläger sich nach unten bewegt. Dadurch verändert sich die Richtung sowie auch zum Teil die Geschwindigkeit.
+
+```
+// Drall beim Wegziehen Schlaeger_links
+  if (keyDown("W") && Ball.isTouching (Schlaeger_links)){
+      Ball.velocityY -= 1.5;
+  }
+  if (keyDown ("S") && Ball.isTouching (Schlaeger_links)){
+      Ball.velocityY +=1.5;
+  }
+  
+// Drall beim Wegziehen Schlaeger_rechts
+  if (keyDown ("up") && Ball.isTouching (Schlaeger_rechts)){
+      Ball.velocityY -=1.5;
+  }
+  if (keyDown ("down") && Ball.isTouching (Schlaeger_rechts)){
+      Ball.velocityY +=1.5;
+  }
+  ```
+  --- 
+
+Die Schlägerbewegung haben wir an Tasten gebunden. So sind die Tasten "W" und "S" für den linken Schläger, zum hoch und runter bewegung. Und die Pfeiltasten für den rechten Schläger zum hoch und runter bewegen. 
+Auch dies haben wir wieder durch eine if-Funktion programmiert. Diese sagt aus, dass wenn der die Taste sich nach unten bewegt (keyDown), das die y-Koordinate des Schlägers um die Schlägergeschwindigkeit addiert oder subtrahiert wird. Die Schlägergeschwindigkeit haben wir in den globalen Variablen mit 10 definiert. Das heißt die y-Koordinate wird immer um 10 subtrahiert, bzw. addiert. Desweitern haben wir in der Bedingung der if-Funktion noch definiert, dass der die y-Koordinate (Schlaeger_links.y) nicht größer bzw. kleiner als die Bildschirmhöhe bzw. der Bildschirmrand unten sein darf. 
+
+```
+// keyDown (up)
+  if (keyDown("W")&& (Schlaeger_links.y > Screen_height)){
+      //Schlaeger_links.y = Schlaeger_links.y-Schlaegergeschwindigkeit;
+        Schlaeger_links.y -= Schlaegergeschwindigkeit;
+  }
+
+//keyDown (down)
+  if (keyDown("S")&& (Schlaeger_links.y < Screen_bottom)) {
+     //Schlaeger_links.y = Schlaeger_links.y + Schlaegergeschwindigkeit;
+      Schlaeger_links.y += Schlaegergeschwindigkeit;
+  }
+
+//keyDown (W)
+  if (keyDown("up")&&(Schlaeger_rechts.y > Screen_height)) {
+      //Schlaeger_rechts.y = Schlaeger_rechts.y - Schlaegergeschwindigkeit;
+        Schlaeger_rechts.y -= Schlaegergeschwindigkeit;
+  }
+
+//keyDown (S)
+  if (keyDown("down")&&(Schlaeger_rechts.y < Screen_bottom)) {
+     //Schlaeger_rechts.y = Schlaeger_rechts.y + Schlaegergeschwindigkeit;
+      Schlaeger_rechts.y += Schlaegergeschwindigkeit;
+  }
+```
+--- 
+Damit der Ball auch vom Schläger
+
+
   
   </details>
   
