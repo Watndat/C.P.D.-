@@ -519,10 +519,60 @@ Auch dies haben wir wieder durch eine if-Funktion programmiert. Diese sagt aus, 
   }
 ```
 --- 
-Damit der Ball auch vom Schläger
+Damit der Ball auch vom Schläger abprallt, haben wir beim Drall eine if-Funktion programmiert, die ausgeführt wird, wenn der Ball den Schläger berührt. Dies haben wir durch Ball.isTouching definiert. Wenn der Ball nun den Schläger berührt, wir die x-Geschwindigkeit (Ball.velocityX) des Balles mal -1 gerechnent, da diese sich somit ändert und der Ball in dem Winkel Einfallswinkel = Ausfallswinkel weiterfliegt.
+Außerdem wird immer ein Sound gespielt, welcher aus der Soundbibliothek von Code.org ist. Dies haben wir  über den Befehl playSound programmiert.
 
-
+```
+//Ball.isTouching Schlaeger_links
+  if (Ball.isTouching(Schlaeger_links)){
+      Ball.velocityX = -1*Ball.velocityX;
+      playSound ("https://audio.code.org/goal1.mp3");
+      
+  }
   
+//Ball.isTouching Schlaeger_rechts
+  if (Ball.isTouching(Schlaeger_rechts)){
+      Ball.velocityX = -1*Ball.velocityX;
+      playSound ("https://audio.code.org/goal1.mp3");
+
+``` 
+--- 
+Damit der Ball wie auf dem Startbildschirm von der oberen Kante des Bildschirmes und der unteren Kante des Bildschirmes abprallt, haben wir auch hier ein if-Funktion programmiert. Sobald die y-Kooradinate des Balles (Ball.y) kleiner bzw. größer als die Bildschirmhöhe (Screen_height) bzw. Blidschirmunterkante (Screen_bottom) wird auch hier die y-Geschwindigkeit (Ball.velocityY) mit -1 multipliziert. Desweiteren wird bei der x-Geschwindigkeit (Ball.velocityX) plus eins gerechnet.
+
+```
+//Ball.isTouching Screen_height
+  if (Ball.y < Screen_height){
+      Ball.velocityY = -1*Ball.velocityY;
+      Ball.x = Ball.x+1;
+  }
+  
+//Ball.isTouching Screen_bottom
+  if (Ball.y > Screen_bottom){
+      Ball.velocityY = -1*Ball.velocityY;
+      Ball.x = Ball.x+1;
+  }
+  
+  ```
+  --- 
+  Um das Spiel zu pausieren, muss man die Leertaste drücken. Dies haben wir wieder durch eine if-Funktion programmiert. Sobald die Leertaste gedrückt wird (keyDown), wird die Aussage Screen_changed_pause als "wahr" definiert. Dadurch wird durch die Hauptschleife der Bildschirm für die Pause initalisiert.
+
+```
+// Pause
+  if (keyDown ("space")){
+      Screen_changed_pause = true;
+  }
+```
+--- 
+Das gleiche wie bei der Pausefunktion gilt auch bei der Gameoverfunktion. Nur das hier die Bedingung erfüllt sein muss, dass einer der Beiden counter die 10 als Wert haben muss. Dann wird auch hier die Aussage Screen_changed_gameover als "wahr" definiert. Desweitern wird noch ein Sound gespielt, welcher wieder durch den Befehl playSound ausgeführt wird.
+
+```
+// Game Over
+  if (counter1 === 10 || counter2 === 10 ){
+      Screen_changed_gameover = true;
+      playSound ("https://audio.code.org/failure3.mp3");
+  }
+}
+```  
   </details>
   
 <details>
