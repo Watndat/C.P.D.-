@@ -593,9 +593,28 @@ Das gleiche wie bei der Pausefunktion gilt auch bei der Gameoverfunktion. Nur da
   
   <details>
   <summary>function Screen_pause_init</summary>
+  In der init-Funktion haben wir wie bei den anderen Zuständen den Hintergrund definiert. Auch haben wir den Zählstand anzeigen lassen, damit die Spieler auch während der Pause immer wissen wie es steht. Um weiter Spielen zu können, haben wir wie beim Startblock eine Animation für einen Continue-knopf eingefügt.
   
+  ```
+  //Hintergrund_pause
+    Hintergrund_pause = background ("green");
   
-  </details>
+//Pauseknopf
+    Pauseknopf =createSprite (200,300,200,200);
+      Pauseknopf.setAnimation("continue.jpg_1");
+
+//Counter
+    
+    text(counter1,130,80);
+    text(":", 190,70);
+    text(counter2,220,80);
+ 
+ ```
+   </details>
+   
+   <details>
+  <summary> function Screen_pause_logic</summary>
+  In der logic-Funktion wurde nur definiert, was passiert wenn der der Continue-Knopf gedrückt wird. Dies haben wir durch eine if-Funktion und den mousePressedOver Befehl ausgerückt. Wenn der Knopf gedrückt wird, wird die Aussage Screen_changed_weiter als "wahr" definiert
   
 
   
