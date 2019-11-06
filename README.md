@@ -644,7 +644,6 @@ Das gleiche wie bei der Pausefunktion gilt auch bei der Gameoverfunktion. Nur da
     Pauseknopf.destroy();
  ``` 
 </details>
----
 
 ## Gameover <a name="acht"></a>
 
@@ -705,7 +704,14 @@ if (mousePressedOver(New_game_block)){
 </details>
 <details>
 <summary> function Screen_gamover_destory</summary>
-
+  Wie auch voher haben wir auch bei diesem Zustand eine destroy-Funktion. Diese bewirkt wie immer, das die voher initialiserten Bestandteile des Screens "zerstört" werden.
+  
+```
+  Hintergrund_gameover.destroy ;
+    Text_gameover.destroy ;
+    New_game_block.destroy();
+}
+```
 </details>
 
   
