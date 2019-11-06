@@ -45,7 +45,7 @@ Hier wird ein möglicher Kurs gezeigt. Hierbei soll der Benutzer den Künstler d
 
 Wenn die Bausteine eigefügt sich und auf den Startbutton geklickt wird, dann beginnt der Künstler zu zeichnen und mit den richtigen Variablen (mit roten Pfeilen markiert) an der richtigen Stelle wird auch das gezeichnet. Klickt man auf den Progarmm zeigen Button (mit dem grünen Pfeil mariert), so wird der Javascriptcode angezeigt.
 
-![InkedScreenshot_2019-11-06 Kurs-fertig-Blog_LI](https://user-images.githubusercontent.com/54102292/68306539-04038000-00aa-11ea-95e8-10e89e56c5b5.jpg)
+  ![Screenshot_2019-11-06 Kurs-Progamm-Blog](https://user-images.githubusercontent.com/54102292/68306932-b89da180-00aa-11ea-830a-a4265b615904.png)
   
   </details>
   
