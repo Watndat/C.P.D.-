@@ -643,7 +643,8 @@ Das gleiche wie bei der Pausefunktion gilt auch bei der Gameoverfunktion. Nur da
    Hintergrund_pause.destroy;
     Pauseknopf.destroy();
  ``` 
---- 
+</details>
+---
 
 ## Gameover <a name="acht"></a>
 
@@ -689,7 +690,8 @@ Damit klar wird wer gewonnen hat, haben wir einen Text ausgeben lassen, der aber
     New_game_block.setAnimation("new Game button.jpg_1");
  ```
 </details>
-<deatils>
+
+<details>
   <summary> function Screen_gameover_logic</summary>
 In dieser Funktion haben wir, wie bei der Pause, nur den New_Game-Button. Das heißt durch eine if-Funktion haben wir die Bedingung erschaffen, dass wenn die Maus auf den Button klickt (mousePressedOver) die Aussage Screen_changed_neu als "wahr" definiert wird. Dadurch wird in der Hauptschleife wieder das Spiel initalisiert und man kann wieder von vorne anfangen zu spieln. Wichtig hierbei ist, dass diesem nicht nur das Spiel wie sonst initalisiert wird, sonder in der Hauptschleife auch der Wert der beiden counter auf null gesetzt wird.
   Desweitern haben wir auch hier wieder einen Sound durch den Befehl playSound eingefügt.
