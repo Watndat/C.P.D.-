@@ -42,7 +42,8 @@ Ein altes Spiel, welches aber jeder kennt. **PONG!** Das Spiel ist angelehnt an 
   <summary>Programmierfunktion</summary>
  Auf code.org können verschiedenen Module benutzt werden um ein Spiel oder sonstiges programmieren zu können. Um nun ein Spiel programmieren zu können, wird das Spielelabor ausgewählt. In diesem Labor kann alles auprobiert werden. code.org stellt bereits vorgefertigte Baussteine zur Verfügung. Diese können als Bausteine angezeigt werden oder aber auch als Javaskipt. Auch lassen sich eigende nicht vorhandene Befehle programmieren, wobei das Programm nicht alle Javaskript funktionen kennt.
   Es kann somit für Angfänger sowie fortgeschrittene leicht programmiert werden.
-  Im App-Labor könne Spiele in Form einer App programmiert werden. Dadurch lassen sich diese Spiele auch auf Tablets oder Handys spielen. 
+  Im App-Labor könne Spiele in Form einer App programmiert werden. Dadurch lassen sich diese Spiele auch auf Tablets oder Handys spielen.   
+  Hierbei muss allerdings beachtet werden, dass code.org teilweise eigene Befehle verwendet, sodass eine Recherche für Javascriptbefehle schwierig wird, da das Programm diese oftmals nicht kennt. Dadurch muss der Benuzer vieles ausprobieren und kommt hauptsächlich mit den code.org Befehlen zu seinem Ziel
   </details>
   
 <details>
