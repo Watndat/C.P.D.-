@@ -577,6 +577,23 @@ Das gleiche wie bei der Pausefunktion gilt auch bei der Gameoverfunktion. Nur da
   
 <details>
   <summary>function Screen_spiel_destroy</summary>
+  Genauso wie beim Startbildschirm haben wir auch hier wieder ein destroy-Funktion. Diese brauchen wir, damit wir zwischen den Screens wechslen können.
+  
+  ```
+  Hintergrund_spiel.destroy;
+  Mittellinie.destroy;
+  Schlaeger_rechts.destroy ();
+  Schlaeger_links.destroy ();
+  Ball.destroy ();
+  
+  ```  
+  </details>
+  
+  ## Die Pause <a name="sieben"></a>
+  
+  <details>
+  <summary>function Screen_pause_init</summary>
+  
   
   </details>
   
