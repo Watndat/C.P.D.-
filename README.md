@@ -61,6 +61,8 @@ Wenn die Bausteine eigefügt sich und auf den Startbutton geklickt wird, dann be
   <summary>Farbcode</summary>
  Während man auf code.ord programmiert, wird man mit verschidenen Typen und Farben konfrontiert. Dabei variieren die Farben je nachdem in welcher Sprache man programmiert.
   
+  ![Screenshot_2019-11-06 Farbcode-Blog](https://user-images.githubusercontent.com/54102292/68307250-36fa4380-00ab-11ea-95a4-5424a32cc4e2.png)
+  
   Die Bausteine:
   * eine programmiete _Funktion_ ist immer grün
   * ein Baustein, der die _World_ beschreibt und definiert ist immer gelb
