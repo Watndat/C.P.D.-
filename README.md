@@ -700,6 +700,11 @@ if (mousePressedOver(New_game_block)){
       playSound ("https://audio.code.org/start1.mp3");
   }
 ``` 
+</details>
+<details<
+<summary> function Screen_gamover_destory</summary>
+
+</details>
 
   
 
