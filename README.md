@@ -220,8 +220,7 @@ Zu jedem Screen gibt es eine eigene if-Funktion. Das heißt wenn die Aussage Scr
  
 ## Der Startbildschirm <a name="fünf"></a>
  
- ![Screenshot_2019-08-28 Bild-Startbildschirm](https://user-images.githubusercontent.com/54102292/63863667-e54c8300-c9ae-11e9-9a05-4cec282734e9.png)
- Neues Bild!!
+![Screenshot_2019-11-06 Startbildschirm-Bild](https://user-images.githubusercontent.com/54102292/68307532-b38d2200-00ab-11ea-8f3c-6fb4e799bc81.png)
  
 Der Code für den Startbildschirm ist einmal in der Funktion Screen_start_init und in der Funktion Screen_start_logic zufinden.
 Damit der Startbildschirm sofort zusehen ist, wenn das Programm gestartet wird, wird als erstes der Startbildschirm initialisiert.
