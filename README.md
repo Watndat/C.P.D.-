@@ -40,6 +40,10 @@ Ein altes Spiel, welches aber jeder kennt. **PONG!** Das Spiel ist angelehnt an 
 ![Screenshot_2019-11-06 Kurs-Blog](https://user-images.githubusercontent.com/54102292/68305936-dbc75180-00a8-11ea-8260-d0db680c4457.png)
   
 Hier wird ein möglicher Kurs gezeigt. Hierbei soll der Benutzer den Künstler durch das Einsezten der vorhandenen Bausteine dazu bringen das vorgegebene Muster nachzumalen.  
+
+![InkedScreenshot_2019-11-06 Kurs-fertig-Blog_LI](https://user-images.githubusercontent.com/54102292/68306539-04038000-00aa-11ea-95e8-10e89e56c5b5.jpg)
+
+Wenn die Bausteine eigefügt sich und auf den Startbutton geklickt wird, dann beginnt der Künstler zu zeichnen und mit den richtigen Variablen (mit roten Pfeilen markiert) an der richtigen Stelle wird auch das gezeichnet. Klickt man auf den Progarmm zeigen Button (mit dem grünen Pfeil mariert), so wird der Javascriptcode angezeigt.
   
   </details>
   
