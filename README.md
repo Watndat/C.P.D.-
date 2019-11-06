@@ -648,7 +648,7 @@ Das gleiche wie bei der Pausefunktion gilt auch bei der Gameoverfunktion. Nur da
 
 ## Gameover <a name="acht"></a>
 
-<details<
+<details>
 <summary> function Screen_gameover_init</summary>
 Der letzte Zustand den es gibt ist Gameover bzw. das einer der beiden Spieler gewonnen hat. Auch hier haben wir wie bei den vorherigen Zuständen auch mit einer init-Funktion angefangen. 
 Hierbei haben wir zuerst den Hintergrund (background) schwarz definiert und den Zählstand wieder als Text ausgegeben.
@@ -703,7 +703,7 @@ if (mousePressedOver(New_game_block)){
   }
 ``` 
 </details>
-<details<
+<details>
 <summary> function Screen_gamover_destory</summary>
 
 </details>
