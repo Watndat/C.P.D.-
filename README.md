@@ -61,8 +61,6 @@ Wenn die Bausteine eigefügt sich und auf den Startbutton geklickt wird, dann be
   <summary>Farbcode</summary>
  Während man auf code.ord programmiert, wird man mit verschidenen Typen und Farben konfrontiert. Dabei variieren die Farben je nachdem in welcher Sprache man programmiert.
   
-  ![Screenshot_2019-11-06 Farbcode-Blog](https://user-images.githubusercontent.com/54102292/68307250-36fa4380-00ab-11ea-95a4-5424a32cc4e2.png)
-  
   Die Bausteine:
   * eine programmiete _Funktion_ ist immer grün
   * ein Baustein, der die _World_ beschreibt und definiert ist immer gelb
@@ -220,7 +218,8 @@ Zu jedem Screen gibt es eine eigene if-Funktion. Das heißt wenn die Aussage Scr
  
 ## Der Startbildschirm <a name="fünf"></a>
  
-![Screenshot_2019-11-06 Startbildschirm-Bild](https://user-images.githubusercontent.com/54102292/68307532-b38d2200-00ab-11ea-8f3c-6fb4e799bc81.png)
+ ![Screenshot_2019-08-28 Bild-Startbildschirm](https://user-images.githubusercontent.com/54102292/63863667-e54c8300-c9ae-11e9-9a05-4cec282734e9.png)
+ Neues Bild!!
  
 Der Code für den Startbildschirm ist einmal in der Funktion Screen_start_init und in der Funktion Screen_start_logic zufinden.
 Damit der Startbildschirm sofort zusehen ist, wenn das Programm gestartet wird, wird als erstes der Startbildschirm initialisiert.
@@ -627,7 +626,81 @@ Das gleiche wie bei der Pausefunktion gilt auch bei der Gameoverfunktion. Nur da
    
    <details>
   <summary> function Screen_pause_logic</summary>
-  In der logic-Funktion wurde nur definiert, was passiert wenn der der Continue-Knopf gedrückt wird. Dies haben wir durch eine if-Funktion und den mousePressedOver Befehl ausgerückt. Wenn der Knopf gedrückt wird, wird die Aussage Screen_changed_weiter als "wahr" definiert
+  In der logic-Funktion wurde nur definiert, was passiert wenn der der Continue-Knopf gedrückt wird. Dies haben wir durch eine if-Funktion und den mousePressedOver Befehl ausgerückt. Wenn der Knopf gedrückt wird, wird die Aussage Screen_changed_weiter als "wahr" definiert und durch die Hauptschleife wird das Spiel wieder initalisiert und es kann weiter gespielt werden.
+  
+  ```
+   if (mousePressedOver (Pauseknopf)){
+      Screen_changed_weiter = true;
+      playSound ("https://audio.code.org/start1.mp3");
+  }
+  ```
+  </details>
+  <details>
+  <summary> function Screen_pause_destory</summary>
+ Wie bei allen Screens haben wir auch hier eine destroy-Funktion, damit zwischen den Screens gewechselt werden kann. 
+  
+  ```
+   Hintergrund_pause.destroy;
+    Pauseknopf.destroy();
+ ``` 
+--- 
+
+## Gameover <a name="acht"></a>
+
+<details<
+<summary> function Screen_gameover_init</summary>
+Der letzte Zustand den es gibt ist Gameover bzw. das einer der beiden Spieler gewonnen hat. Auch hier haben wir wie bei den vorherigen Zuständen auch mit einer init-Funktion angefangen. 
+Hierbei haben wir zuerst den Hintergrund (background) schwarz definiert und den Zählstand wieder als Text ausgegeben.
+
+```
+// Hintergrund_gameover
+    Hintergrund_gameover = background ("black");
+    
+// Counter
+    
+    text(counter1,100,80);
+    text(":", 200,70);
+    text(counter2,230,80);
+```
+--- 
+Damit klar wird wer gewonnen hat, haben wir einen Text ausgeben lassen, der aber unterschiedlich ausfällt, da es davon abhängt wer gewonnen hat. Dies kontrollieren wir wieder über eine if-Funktion. Das heißt der Spieler dessen counter-Variable den Wert 10 bekommt den Text ausgegeben. So wird zum Beispiel wenn Spieler 1 gewonnen hat der Text: "You won red" ausgegeben. Beim Text haben wir dann noch definiert, wo, wie groß und welche Schriftart ausgegeben werden soll.
+
+```
+// Text = GameOver
+  if (counter1 === 10){
+      Text_gameover = textSize(50);
+      Text_gameover = textFont("Calibri");
+      Text_gameover = text("You won red", 70,200);
+      
+  }
+  
+  if (counter2 === 10){
+      Text_gameover = textSize ("50");
+      Text_gameover = textFont ("Calibri");
+      Text_gameover = text ("You won blue", 70,200);
+  }
+```
+ ---
+ Damit man das Spiel nach einer Partie nochmal spielen kann, ohne das gesamte Programm neu starten zu müssen haben wir einen New_Game-Block programmiert. Auch hier haben wir wieder eine Animation aus dem Zeichentrickfilm Bereich von code.org benutzt. Den New-Game_Block haben wir durch den Befehl createSprite erzeugt, mit Angaben wo dieser erscheinen soll, und mit dem Befehl New_game_block.setAnimation haben wir ihn durch eine Animation ersetzt.
+ 
+ ```
+ // New_game_block
+  New_game_block = createSprite (200,285,150,50);
+    New_game_block.setAnimation("new Game button.jpg_1");
+ ```
+</details>
+<deatils>
+  <summary> function Screen_gameover_logic</summary>
+In dieser Funktion haben wir, wie bei der Pause, nur den New_Game-Button. Das heißt durch eine if-Funktion haben wir die Bedingung erschaffen, dass wenn die Maus auf den Button klickt (mousePressedOver) die Aussage Screen_changed_neu als "wahr" definiert wird. Dadurch wird in der Hauptschleife wieder das Spiel initalisiert und man kann wieder von vorne anfangen zu spieln. Wichtig hierbei ist, dass diesem nicht nur das Spiel wie sonst initalisiert wird, sonder in der Hauptschleife auch der Wert der beiden counter auf null gesetzt wird.
+  Desweitern haben wir auch hier wieder einen Sound durch den Befehl playSound eingefügt.
+  
+```
+if (mousePressedOver(New_game_block)){
+      Screen_changed_neu = true;
+      playSound ("https://audio.code.org/start1.mp3");
+  }
+``` 
+
   
 
   
