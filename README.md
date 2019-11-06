@@ -35,9 +35,11 @@ Ein altes Spiel, welches aber jeder kennt. **PONG!** Das Spiel ist angelehnt an 
 
 <details>
   <summary>Kurse</summary>
-  Bei code.org können Nutzer auch ohne Anmeldung Kurse zum Thema programmieren machen. Dabei werden in verschiedene Altersstufen unterschieden. Auch gibt es Kurse für Nichtleser, sodass auch schon die Kleinsten programmieren lernen können.  
-  ![Screenshot_2019-11-06 Kurs-Blog](https://user-images.githubusercontent.com/54102292/68305936-dbc75180-00a8-11ea-8260-d0db680c4457.png)
-Hier wird ein möglicher Curs gezeigt. Hierbei soll der Benutzer den Künstler durch das Einsezten der vorhandenen Bausteine dazu bringen das vorgegebene Muster nachzumalen.  
+  Bei code.org können Nutzer auch ohne Anmeldung Kurse zum Thema programmieren machen. Dabei werden in verschiedene Altersstufen unterschieden. Auch gibt es Kurse für Nichtleser, sodass auch schon die Kleinsten programmieren lernen können.   
+  
+![Screenshot_2019-11-06 Kurs-Blog](https://user-images.githubusercontent.com/54102292/68305936-dbc75180-00a8-11ea-8260-d0db680c4457.png)
+  
+Hier wird ein möglicher Kurs gezeigt. Hierbei soll der Benutzer den Künstler durch das Einsezten der vorhandenen Bausteine dazu bringen das vorgegebene Muster nachzumalen.  
   
   </details>
   
