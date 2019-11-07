@@ -14,6 +14,10 @@
 
 [Das Spielfeld](#sechs)
 
+[Die Pause](#sieben)
+
+[Gameover](#acht)
+
 
 ## Die Idee! <a name="eins"></a>
 
@@ -93,7 +97,7 @@ Hier in diesem Spiel wird der alte Klassiker PONG aufgegriffen und verbessert. D
  
 ## Das Grundgerüst <a name="vier"></a>
 
-In unserem Spiel werden folgende Globale Variablen verwendet. Globale Variablen heißt, sie werden am Anfang des Codes definiert und im weitern Spiel mit Werten belegt.
+In unserem Spiel verwenden wir globale Variablen. Das heißt sie werden im Gegensatz zu lokalen Variablen am Anfang des Codes definiert und im weitern Spiel mit Werten belegt. Lokale Variablen werden erst in einer Funktion definiert und mit Werten belegt, allerdings kann dann auch nur diese Funktion auf die Variable zugreifen. Bei globalen Variablen können alle Funktion auf die Variablen zugreifen und diese mit Werten belegen.
 
 ```  
 var Hintergrund_start;  
@@ -112,7 +116,21 @@ var New_game_block;
 var Pauseknopf;  
 
 var Text_start;  
-var Text_gameover;  
+var Text_gameover; 
+
+var Screen_hight;  
+var Scgreen_bottom;  
+var Screen_rand_links;  
+var Screen_rand_rechts;  
+
+var Ball;  
+var Ballgeschwindigkeit;   
+
+var counter1 = 0;  
+var counter2 = 0;
+```
+---
+In unserem Variablen haben wir auch Boolean Variablen benutzt. Diese können Aussagen, wie zum Beispiel Screen_start_active, als "wahr" (true) oder "falsch" (false) definieren. Somit kann inerhalb einer if-Funktion zum Beispiel gesagt werden, wenn die Aussage "wahr" ist, soll 
 
 var Screen_start_active = Boolean (true);  
 var Screen_spiel_active = Boolean (false);  
@@ -125,16 +143,7 @@ var Screen_changed_gameover = Boolean (false);
 var Screen_changed_neu = Boolean (false);  
 var Screen_changed_weiter = Boolean (false);  
 
-var Screen_hight;  
-var Scgreen_bottom;  
-var Screen_rand_links;  
-var Screen_rand_rechts;  
 
-var Ball;  
-var Ballgeschwindigkeit;   
-
-var counter1 = 0;  
-var counter2 = 0;
 ```  
 
 Unser Spiel hat verschiedene Zustände, welche im Zustandsdiagramm zusehen sind.
