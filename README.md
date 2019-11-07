@@ -97,6 +97,9 @@ Hier in diesem Spiel wird der alte Klassiker PONG aufgegriffen und verbessert. D
  
 ## Das Grundgerüst <a name="vier"></a>
 
+<details>
+  <summary> Die globalen Variablen </summary>
+
 In unserem Spiel verwenden wir globale Variablen. Das heißt sie werden im Gegensatz zu lokalen Variablen am Anfang des Codes definiert und im weitern Spiel mit Werten belegt. Lokale Variablen werden erst in einer Funktion definiert und mit Werten belegt, allerdings kann dann auch nur diese Funktion auf die Variable zugreifen. Bei globalen Variablen können alle Funktion auf die Variablen zugreifen und diese mit Werten belegen.
 
 ```  
@@ -130,8 +133,9 @@ var counter1 = 0;
 var counter2 = 0;
 ```
 ---
-In unserem Variablen haben wir auch Boolean Variablen benutzt. Diese können Aussagen, wie zum Beispiel Screen_start_active, als "wahr" (true) oder "falsch" (false) definieren. Somit kann inerhalb einer if-Funktion zum Beispiel gesagt werden, wenn die Aussage "wahr" ist, soll 
+In unserem Variablen haben wir auch Boolean Variablen benutzt. Diese können Aussagen, wie zum Beispiel Screen_start_active, als "wahr" (true) oder "falsch" (false) definieren. Somit kann inerhalb einer if-Funktion zum Beispiel gesagt werden, wenn die Aussage "wahr" ist, soll eine bestimmte Aktion ausgeführt werden.
 
+```
 var Screen_start_active = Boolean (true);  
 var Screen_spiel_active = Boolean (false);  
 var Screen_gameover_active = Boolean (false);  
@@ -142,21 +146,21 @@ var Screen_changed_pause = Boolean (false);
 var Screen_changed_gameover = Boolean (false);  
 var Screen_changed_neu = Boolean (false);  
 var Screen_changed_weiter = Boolean (false);  
-
-
 ```  
+</details>
 
+<details>
+  <summary> Die Zustände </summary>
+  
 Unser Spiel hat verschiedene Zustände, welche im Zustandsdiagramm zusehen sind.
 
 bild Zustandsdiagramm
 
-Zu jedem Zustand gibt es ein Screen, wobei jeder Screen durch eine eigene init initialisiert wird und die Logic in einer jeweilligen Logicfunktion abgearbeitet wird.
-Die einzelnen Zustände, bzw. Screens werden über die Hauptschleife gesteurt. Dies ist möglich durch die Boolean Variablen, die aussagen, ob eine Aussage wahr oder falsch ist. Dadurch ist es möglich, einen Screen als wahr darzustellen, während alle anderen Screens falsch sind, so dass der "wahre" Screen initialisiert wird und auch die Logicfunktion abgearbeitet wird. 
+Zu jedem Zustand gibt es ein Screen, wobei jeder Screen durch eine eigene init-Funktion initialisiert wird und die Logik in einer jeweilligen Logic-Funktion abgearbeitet wird.
+Die einzelnen Zustände, bzw. Screens werden über die Hauptschleife gesteurt. Dies ist möglich durch die Boolean Variablen. Jeder Screen hat zwei Boolean Variablen. Einmal die Aussage darüber ob der jeweillige Screen aktiv ist (Screen_start_active) und ob dieser Screen sich ändern soll (Screen_changed_start).
+In der Hauptschleife wird dauerhaft abgefragt, welche Aussage gerade "wahr" ist. Wenn ein Aussage über den aktiv Zustand eines Screens wahr ist, wird definiert, dass in die logic-Funktion gesprungen wird.
 
 ```   
-// function draw (Hauptschleife)
-function draw(){
-
   if (Screen_start_active) {
       Screen_start_logic();
   }
@@ -172,8 +176,13 @@ function draw(){
   if (Screen_pause_active){
       Screen_pause_logic();
   }
+```
+---
+Wenn ein Screen gewechselt wird, werden verschiedene Aktionen ausgeführt. Als erstes wird der momentan aktive Screen "zerstört" (Screen_start_destory). Dies wird aber später nochmal genauer erklärt. 
+Desweitern wird der momentan aktive Bildschirm als "falsch" definiert und der Bildschirm der aktiv werden soll als "wahr" dargestellt (z.B. Screen_start_aktive = false und Screen_spiel_active = true). Damit der nächste Screen auch angezeigt wird, wird der entsprechende Screen initialisiert (Screen_spiel_init). Zum Schluss wird noch die Aussage, dass der Screen wechseln soll, als "falsch" definiert.
 
-  if (Screen_changed_start) {
+```
+if (Screen_changed_start) {
       Screen_start_destroy();
       Screen_start_active = false;
       Screen_spiel_active = true;
@@ -215,15 +224,9 @@ function draw(){
       counter1 = 0;
       counter2 = 0;
   }
-
-drawSprites();
-  
-}
 ```   
-Zu jedem Screen gibt es eine eigene if-Funktion. Das heißt wenn die Aussage Screen_start_active "wahr" ist, so wird die Funktion Screen_start_logic abgearbeitet. Dadurch kann zwischen den verschiedenen Screens gewechselt werden. 
-
-<hr>
-
+</details>
+---
  
 ## Der Startbildschirm <a name="fünf"></a>
  
