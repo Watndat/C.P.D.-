@@ -236,8 +236,8 @@ if (Screen_changed_start) {
  
 ## Der Startbildschirm <a name="fünf"></a>
  
-![Uploading Startbildschirm_Bild.png…]()
- Neues Bild!!
+![Startbildschirm_Bild](https://user-images.githubusercontent.com/54102292/68529692-59859a00-0301-11ea-9944-293a3f3d78dc.png)
+
  
 Der Code für den Startbildschirm ist einmal in der Funktion Screen_start_init und in der Funktion Screen_start_logic zufinden.
 Damit der Startbildschirm sofort zusehen ist, wenn das Programm gestartet wird, wird als erstes der Startbildschirm initialisiert.
@@ -366,6 +366,9 @@ function Screen_start_destroy (){
 
  
  ## Das Spielfeld <a name="sechs"></a>
+ 
+ ![Spielfeld](https://user-images.githubusercontent.com/54102292/68529738-db75c300-0301-11ea-977c-dc1255a79b1c.png)
+
  
  <details>
   <summary>function Screen_spiel_init</summary>
@@ -621,6 +624,8 @@ Das gleiche wie bei der Pausefunktion gilt auch bei der Gameoverfunktion. Nur da
   
   ## Die Pause <a name="sieben"></a>
   
+  ![Pause](https://user-images.githubusercontent.com/54102292/68529775-4d4e0c80-0302-11ea-814b-1efafe02cc6b.png)
+  
   <details>
   <summary>function Screen_pause_init</summary>
   In der init-Funktion haben wir wie bei den anderen Zuständen den Hintergrund definiert. Auch haben wir den Zählstand anzeigen lassen, damit die Spieler auch während der Pause immer wissen wie es steht. Um weiter Spielen zu können, haben wir wie beim Startblock eine Animation für einen Continue-knopf eingefügt.
@@ -665,6 +670,8 @@ Das gleiche wie bei der Pausefunktion gilt auch bei der Gameoverfunktion. Nur da
 
 ## Gameover <a name="acht"></a>
 
+![Gameover](https://user-images.githubusercontent.com/54102292/68529831-044a8800-0303-11ea-88d0-32d0f0391a1d.png)
+
 <details>
 <summary> function Screen_gameover_init</summary>
 Der letzte Zustand den es gibt ist Gameover bzw. das einer der beiden Spieler gewonnen hat. Auch hier haben wir wie bei den vorherigen Zuständen auch mit einer init-Funktion angefangen. 
@@ -675,7 +682,6 @@ Hierbei haben wir zuerst den Hintergrund (background) schwarz definiert und den 
     Hintergrund_gameover = background ("black");
     
 // Counter
-    
     text(counter1,100,80);
     text(":", 200,70);
     text(counter2,230,80);
@@ -703,9 +709,11 @@ Damit klar wird wer gewonnen hat, haben wir einen Text ausgeben lassen, der aber
  
  ```
  // New_game_block
-  New_game_block = createSprite (200,285,150,50);
+    New_game_block = createSprite (200,285,150,50);
     New_game_block.setAnimation("new Game button.jpg_1");
  ```
+ ---
+ 
 </details>
 
 <details>
@@ -719,7 +727,9 @@ if (mousePressedOver(New_game_block)){
       playSound ("https://audio.code.org/start1.mp3");
   }
 ``` 
+
 </details>
+
 <details>
 <summary> function Screen_gamover_destory</summary>
   Wie auch voher haben wir auch bei diesem Zustand eine destroy-Funktion. Diese bewirkt wie immer, das die voher initialiserten Bestandteile des Screens "zerstört" werden.
