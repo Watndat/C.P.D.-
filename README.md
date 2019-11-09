@@ -154,6 +154,8 @@ var Screen_changed_weiter = Boolean (false);
   
 Unser Spiel hat verschiedene Zustände, welche im Zustandsdiagramm zusehen sind.
 
+![Zustandsdiamgramm 2](https://user-images.githubusercontent.com/54102292/68529440-1a564980-02ff-11ea-85c6-e6a14c8e32ab.png)
+
 bild Zustandsdiagramm
 
 Zu jedem Zustand gibt es ein Screen, wobei jeder Screen durch eine eigene init-Funktion initialisiert wird und die Logik in einer jeweilligen Logic-Funktion abgearbeitet wird.
