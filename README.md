@@ -147,16 +147,18 @@ var Screen_changed_gameover = Boolean (false);
 var Screen_changed_neu = Boolean (false);  
 var Screen_changed_weiter = Boolean (false);  
 ```  
+---
+
 </details>
 
 <details>
   <summary> Die Zustände </summary>
   
-Unser Spiel hat verschiedene Zustände, welche im Zustandsdiagramm zusehen sind.
+Unser Spiel hat verschiedene Zustände, welche hier im Zustandsdiagramm zusehen sind.
 
 ![Zustandsdiamgramm 2](https://user-images.githubusercontent.com/54102292/68529440-1a564980-02ff-11ea-85c6-e6a14c8e32ab.png)
 
-bild Zustandsdiagramm
+Der erste Zustand der erreicht werden kann, ist der Start. Von diesem Zustand kann man auf das Spiel kommen. Sobald man auf dem Spiel ist gibt es mehrere Möglichkeiten. Man kann in den Pausezustand gelangen und von diesem auch wieder zurück zum Spiel, und vom Spiel in den Gameoverzustand. Von diesem Zustand kann man allerdings auch wieder zum Spiel gelangen, damit mehrere Runden gespielt werden können.
 
 Zu jedem Zustand gibt es ein Screen, wobei jeder Screen durch eine eigene init-Funktion initialisiert wird und die Logik in einer jeweilligen Logic-Funktion abgearbeitet wird.
 Die einzelnen Zustände, bzw. Screens werden über die Hauptschleife gesteurt. Dies ist möglich durch die Boolean Variablen. Jeder Screen hat zwei Boolean Variablen. Einmal die Aussage darüber ob der jeweillige Screen aktiv ist (Screen_start_active) und ob dieser Screen sich ändern soll (Screen_changed_start).
@@ -227,12 +229,14 @@ if (Screen_changed_start) {
       counter2 = 0;
   }
 ```   
-</details>
 ---
+
+</details>
+
  
 ## Der Startbildschirm <a name="fünf"></a>
  
- ![Screenshot_2019-08-28 Bild-Startbildschirm](https://user-images.githubusercontent.com/54102292/63863667-e54c8300-c9ae-11e9-9a05-4cec282734e9.png)
+![Uploading Startbildschirm_Bild.png…]()
  Neues Bild!!
  
 Der Code für den Startbildschirm ist einmal in der Funktion Screen_start_init und in der Funktion Screen_start_logic zufinden.
