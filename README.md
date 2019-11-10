@@ -741,8 +741,3 @@ if (mousePressedOver(New_game_block)){
 }
 ```
 </details>
-
-  
-
-  
-  
