@@ -351,7 +351,7 @@ Damit das Spiel gestartet werden kann, haben wir den Startblock. Wenn man auf di
 <details>
   <summary>function_screen_start_destroy</summary>
   
- In werden alle Angaben, welche wir in Screen_start_init gemacht haben "zerstört". Das heißt sie werden nicht mehr auf dem Bildschirm angezeigt, können aber falls man wieder in Screen_start_init kommt, wiederhergestellt werden. Diese Funktion brauchen wir, um zwischen den einzelnen Screens wechseln zu können.
+ In ihr werden alle Angaben, welche wir in Screen_start_init gemacht haben "zerstört". Das heißt sie werden nicht mehr auf dem Bildschirm angezeigt, können aber falls man wieder in Screen_start_init kommt, wiederhergestellt werden. Diese Funktion brauchen wir, um zwischen den einzelnen Screens wechseln zu können.
  
 ``` 
 function Screen_start_destroy (){
@@ -372,7 +372,7 @@ function Screen_start_destroy (){
  
  <details>
   <summary>function Screen_spiel_init</summary>
-Durch die Hauptschleife kommt man nun in die init-Funktion vom "Spiel". Als erstes haben wir wieder den Hintergrund (Hintergrund_spiel) defieniert. Hier haben wir uns für Grün entschieden, da wir somit eine Tischtennisplatten emittieren können. Desweitern haben wir noch eine Mittellinie (Mittellinie) definiert, damit die Spieler besser in die zwei Hälften unterscheiden können.
+Durch die Hauptschleife kommt man nun in die init-Funktion vom "Spiel". Als erstes haben wir wieder den Hintergrund (Hintergrund_spiel) defieniert. Hier haben wir uns für Grün entschieden, da wir somit eine Tischtennisplatte emittieren können. Des weitern haben wir noch eine Mittellinie (Mittellinie) definiert, damit die Spieler besser in die zwei Hälften unterscheiden können.
   
   ```
 // Hintergrund_Spiel
@@ -385,7 +385,7 @@ Durch die Hauptschleife kommt man nun in die init-Funktion vom "Spiel". Als erst
 ```
 --- 
 
-Die Schläger (Schlaeger_rechts / Schlaeger_links) haben wir wieder durch den Befehl createSprite programmiert. Die Schläger haben wir in Abhängigkeit zur Bildschirmgröße gesetzt, damit es egal ist, wie groß dieser später ist. Dies haben wir durch die World.height / bzw. World.width gemacht. So ist die Höhe der Schläger zum Beispiel ein achtel der Bildschirmgröße (World.width/8). So ist gewährleistet, dass der Schläger nicht zu klein, zu groß, zu breit, zu dünn für den Bildschrim ist. Auch haben wir die Position in Abhängigkeit zur Bildschirmgröße gestzt, so dass der Abstand zum Bildschirmrand immer gleich ist.
+Die Schläger (Schlaeger_rechts / Schlaeger_links) haben wir wieder durch den Befehl createSprite programmiert. Die Schläger haben wir in relativ zur Bildschirmgröße gesetzt, damit es egal ist, wie groß dieser später ist. Dies haben wir durch die World.height / bzw. World.width gemacht. So ist die Höhe der Schläger zum Beispiel ein achtel der Bildschirmgröße (World.width/8). So ist gewährleistet, dass der Schläger nicht zu klein, zu groß, zu breit, zu dünn für den Bildschrim ist. Auch haben wir die Position in Abhängigkeit zur Bildschirmgröße gestzt, so dass der Abstand zum Bildschirmrand immer gleich ist.
 Die Schläger haben wir mit unterschiedlichen Farben belegt, damit man diese besser auseinanderhalten kann und die Spieler so einer Farbe zugewiesen werden.
 
 ```
@@ -452,7 +452,7 @@ Ballgeschwindigkeit = zufaellige_zahl();
 <details>
   <summary>Screen_spiel_logic</summary>
 Auch hier haben wir den Hintergrund und die Mittellinie nochmals definiert, damit der Ball sich auch wirklich bewegt und es sich nicht mehrer Bälle bilden.
-Desweitern haben wir hier den Spielstand (counter1 /counter2) eingefügt, dieser ist eine Variable, welche wir bei den globalen Variablen mit null belegt haben. Diese Variablen wird nun durch den Befehl text angezeigt. 
+Desweitern haben wir hier den Spielstand (counter1 /counter2) eingefügt, diese sind Variablen, welche wir bei den globalen Variablen mit null belegt haben. Diese Variablen wird nun durch den Befehl text angezeigt. 
  
 ```
 // Hintergrund2
@@ -476,8 +476,8 @@ Damit der Ball während des Spieles, dass heißt zwischen zwei Punkten, nicht be
     Ball.setSpeedAndDirection(Ball.getSpeed()+0.005,Ball.getDirection()+0);
  ``` 
  --- 
- Wenn der x-Koordinate des Balles (Ball.x) größer ist als der Wert für den linken Bildschrimrand (Scree_rand_links), wird der entsprechende Zählstand um eins ehöt und der Ball wird wieder in der Mitte des Spielfeldes angezeigt.
-Der Zählstand wird um eins erhöt, in dem beim entsprechenden Counter +1 gerechnet wird. 
+ Wenn der x-Koordinate des Balles (Ball.x) größer ist als der Wert für den linken Bildschrimrand (Scree_rand_links), wird der entsprechende Zählstand um eins ehöht und der Ball wird wieder in der Mitte des Spielfeldes angezeigt.
+Der Zählstand wird um eins erhöht, in dem beim entsprechenden Counter +1 gerechnet wird. 
 Beim Ball werden x- und y-Koordinaten festgelegt, wo dieser wieder auftauchen soll, nach dem er über den Bildschirmrand geflogen ist. Damit der Ball nicht immer in die gleiche Richtung fliegt und auch nicht immer die gleiche Geschwindigkeit hat, haben wir diese (Ball.velocity) wieder mit einer zufälligen Zahl (randomNumber) belegt. Dabei haben wir den Zahlenbereich immer so festgelgt, dass der Ball auf die Spielhälfte fliegt, als ob der Spieler der ein Punkt gemacht hat, einen Aufschlag ausführen würde. Das heißt, beim linken Rand ist der Bereich der x-Geschwindigeit -8 bis -4 und die y-Geschwindigkeit -8 bis 8. Somit fliegt der Ball zuerst in die linke Spielfeldhälfte. Allerdings immer in einem anderen Winkel, so dass dies nicht absehbar ist. Beim rechten Spielfeldrand ist es genauso, nur das der Bereich der x-Geschwindigkeit 4 bis 8 ist und die y-Geschwindigkeit einen Bereich von -8 bis 8 hat.
 
 ```
