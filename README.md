@@ -236,7 +236,8 @@ if (Screen_changed_start) {
  
 ## Der Startbildschirm <a name="fünf"></a>
  
-![Startbildschirm_Bild](https://user-images.githubusercontent.com/54102292/68529692-59859a00-0301-11ea-9944-293a3f3d78dc.png)
+![C P D  - Spielelabor - Startbildschirm 2 0](https://user-images.githubusercontent.com/54102292/68607852-e3746500-04b1-11ea-8dbe-39e7d18a1c02.jpg)
+
 
  
 Der Code für den Startbildschirm ist einmal in der Funktion Screen_start_init und in der Funktion Screen_start_logic zu finden.
