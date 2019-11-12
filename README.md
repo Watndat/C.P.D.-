@@ -1,4 +1,9 @@
 # C.P.D. - das fun/tastische, farbenfrohe, digitale Pong Spiel!
+von Cara Klimmek und Johanna Grahl
+Stormarnschule Ahrensburg
+Klasse 12g
+Schuljahr 2019/2020                                                                                                
+
 
 ## Von der Idee zum Spiel
 
