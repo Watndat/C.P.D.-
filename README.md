@@ -11,17 +11,15 @@ Schuljahr 2019/2020
 
 [Das Programm](#zwei)
 
-[Das Spiel](#drei)
+[Das Grundgerüst](#drei)
 
-[Das Grundgerüst](#vier)
+[Der Startbildschirm](#vier)
 
-[Der Startbildschirm](#fünf)
+[Das Spielfeld](#fünf)
 
-[Das Spielfeld](#sechs)
+[Die Pause](#sechs)
 
-[Die Pause](#sieben)
-
-[Gameover](#acht)
+[Gameover](#sieben)
 
 
 ## Die Idee! <a name="eins"></a>
@@ -97,15 +95,7 @@ In diesem Spiel wurde allerdings in Javaskript geschrieben. Auch hier gibt es in
   
   <hr>
  
- 
-## Das Spiel <a name="drei"></a>  
-
-Hier in diesem Spiel wird der alte Klassiker PONG aufgegriffen und verbessert. Der Spieler hat die Möglichkeit, das Spiel mit einem Klick auf den Startbotton zu beginnen. Im Spiel selbst 
- 
- <hr>
- 
- 
-## Das Grundgerüst <a name="vier"></a>
+## Das Grundgerüst <a name="drei"></a>
 
 <details>
   <summary> Die globalen Variablen </summary>
@@ -244,7 +234,7 @@ if (Screen_changed_start) {
 </details>
 
  
-## Der Startbildschirm <a name="fünf"></a>
+## Der Startbildschirm <a name="vier"></a>
  
 ![C P D  - Spielelabor - Startbildschirm 2 0](https://user-images.githubusercontent.com/54102292/68607852-e3746500-04b1-11ea-8dbe-39e7d18a1c02.jpg)
 
@@ -376,7 +366,7 @@ function Screen_start_destroy (){
 </details>
 
  
- ## Das Spielfeld <a name="sechs"></a>
+ ## Das Spielfeld <a name="fünf"></a>
  
  ![Spielfeld](https://user-images.githubusercontent.com/54102292/68529738-db75c300-0301-11ea-977c-dc1255a79b1c.png)
 
@@ -633,7 +623,7 @@ Das gleiche wie bei der Pausefunktion gilt auch bei der Gameoverfunktion. Nur da
   ```  
   </details>
   
-  ## Die Pause <a name="sieben"></a>
+  ## Die Pause <a name="sechs"></a>
   
   ![Pause](https://user-images.githubusercontent.com/54102292/68529775-4d4e0c80-0302-11ea-814b-1efafe02cc6b.png)
   
@@ -752,3 +742,7 @@ if (mousePressedOver(New_game_block)){
 }
 ```
 </details>
+
+## Das Schlusswort
+
+Unser erstes Projekt im Informatikkurs hat uns sehr begeistert und wir haben viel neus gelernt. 
