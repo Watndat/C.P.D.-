@@ -265,8 +265,8 @@ Screen_start_init();
       Text_start = text("PONG", 70,200);  
   ```
   ---
- Der Startblock (Startblock) wird ebenfalls in der Funktion Screen_start_init festgelegt. Hierbei wird durch den Befehl "createSprite" festgelegt, wo dieser Startblock liegen soll. Es wird neben der x und y Position auch die Höhe und die Breite festgelgt. Durch den Befehl "setAnimation" wird der Startblock mit der entsprechenden Animation ausgegeben. Die Animation ist bei Code.org im Zeichentrickbereich hinterlegt.
-
+ Der Startbutton (Startblock), mit dem man vom Startbildschirm zum Spiel wechseln kann, wird ebenfalls in der Funktion Screen_start_init festgelegt. Hierbei wird durch den Befehl "createSprite" festgelegt, wo dieser Startblock liegen soll. Es wird neben der x und y Position auch die Höhe und die Breite festgelgt. Durch den Befehl "setAnimation" wird der Startblock mit der entsprechenden Animation ausgegeben. Die Animation ist bei Code.org im Zeichentrickbereich hinterlegt.
+ 
 ```
  //Startblock  
       Startblock = createSprite (200,285,150,50);  
@@ -314,7 +314,7 @@ Desweitern haben wir in dieser Funktion auch die Bildschirmgrenze definiert. Die
   <summary>function Screen_start_logic</summary>
   
   Als erstes haben wir nochmal den Hintergrund und den Text definiert, damit der Ball welcher über den Bildschirm fliegt auch zu sehen ist und es nicht zu einer langen Reihe an Bällen kommt.
-  Damit der Ball am Bildschirm Rand abprallt, haben wir if Funktion definiert. Die besagen, dass wenn der Ball den Bildschirmrand berührt, die Ballgeschwindigkeit (Ball.velocity) sich vom Vorzeichen her umdreht (mal -1). Dadurch verändert sich der X- bzw. Y-Wert, und somit die Richtung des Balles. Dies haben wir bei allen vier Bildschirmrändern getan.  
+  Damit der Ball am Bildschirm Rand abprallt, haben wir eine if-Funktion definiert. Die besagen, dass wenn der Ball den Bildschirmrand berührt, die Ballgeschwindigkeit (Ball.velocity) sich vom Vorzeichen her umdreht (mal -1). Dadurch verändert sich der X- bzw. Y-Wert, und somit die Richtung des Balles. Dies haben wir bei allen vier Bildschirmrändern getan.  
   ```
 //Ball.isTouching Screen_height
   if (Ball.y < Screen_height){
