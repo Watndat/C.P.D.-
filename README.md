@@ -21,7 +21,12 @@
 
 ## Die Idee! <a name="eins"></a>
 
-Ein altes Spiel, welches aber jeder kennt. **PONG!** Das Spiel ist angelehnt an den Klassiker. Jedoch sind einige Funktionen hinzugefügt. Im Folgenden Blog werden alle Funktionen, sowie der Code für das Spiel erklärt und dargestellt.
+Ein altes Spiel, welches aber jeder kennt. **PONG** C.P.D. ist angelehnt an den Klassiker. Jedoch sind einige Funktionen hinzugefügt. Im Folgenden Blog werden alle Funktionen, sowie der Code für das Spiel erklärt und dargestellt.
+Wir haben uns für einen Klassiker entschieden, der im ersten Moment einfach aussieht, aber dennoch seine Herrausforderungen besitzt. Diese haben wir zum Teil selber erschaffen, durch Extras im Spiel, aber einige waren auch von Anfang an dar. 
+
+
+Hier in diesem Spiel wird der alte Klassiker PONG aufgegriffen und verbessert. Der Spieler hat die Möglichkeit, das Spiel mit einem Klick auf den Startbotton zu beginnen. Im Spiel selbst 
+ 
 <hr>
 
 
