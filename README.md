@@ -7,26 +7,26 @@ Schuljahr 2019/2020
 
 ## Von der Idee zum Spiel
 
-[Die Idee!](#eins)
+[Die Idee!](#1)
 
-[Das Programm](#zwei)
+[Das Programm](#2)
 
-[Das Grundgerüst](#drei)
+[Das Grundgerüst](#3)
 
-[Der Startbildschirm](#vier)
+[Der Startbildschirm](#4)
 
-[Das Spielfeld](#fünf)
+[Das Spielfeld](#5)
 
-[Die Pause](#sechs)
+[Die Pause](#6)
 
-[Gameover](#sieben)
+[Gameover](#7)
 
-[Das Schlusswort](#acht)
+[Das Schlusswort](#8)
 
-[Der Stundenblog](#neun)
+[Der Stundenblog](#9)
 
 
-## Die Idee! <a name="eins"></a>
+## Die Idee! <a name="1"></a>
 
 Ein altes Spiel, welches aber jeder kennt. **PONG** C.P.D. ist angelehnt an den Klassiker. Jedoch sind einige Funktionen hinzugefügt. Im Folgenden Blog werden alle Funktionen, sowie der Code für das Spiel erklärt und dargestellt.
 Wir haben uns für einen Klassiker entschieden, der im ersten Moment einfach aussieht, aber dennoch seine Herrausforderungen besitzt. Diese haben wir zum Teil selber erschaffen, durch Extras im Spiel, aber einige waren auch von Anfang an dar. 
@@ -37,7 +37,7 @@ Hier in diesem Spiel wird der alte Klassiker PONG aufgegriffen und verbessert. D
 <hr>
 
 
-## Das Programm <a name="zwei"></a>
+## Das Programm <a name="2"></a>
 ### code.org
 
 <details>
@@ -99,7 +99,7 @@ In diesem Spiel wurde allerdings in Javaskript geschrieben. Auch hier gibt es in
   
   <hr>
  
-## Das Grundgerüst <a name="drei"></a>
+## Das Grundgerüst <a name="3"></a>
 
 <details>
   <summary> Die globalen Variablen </summary>
@@ -238,7 +238,7 @@ if (Screen_changed_start) {
 </details>
 
  
-## Der Startbildschirm <a name="vier"></a>
+## Der Startbildschirm <a name="4"></a>
  
 ![C P D  - Spielelabor - Startbildschirm 2 0](https://user-images.githubusercontent.com/54102292/68607852-e3746500-04b1-11ea-8dbe-39e7d18a1c02.jpg)
 
@@ -370,7 +370,7 @@ function Screen_start_destroy (){
 </details>
 
  
- ## Das Spielfeld <a name="fünf"></a>
+ ## Das Spielfeld <a name="5"></a>
  
  ![Spielfeld](https://user-images.githubusercontent.com/54102292/68529738-db75c300-0301-11ea-977c-dc1255a79b1c.png)
  
@@ -629,7 +629,7 @@ Das gleiche wie bei der Pausefunktion gilt auch bei der Gameoverfunktion. Nur da
   ```  
   </details>
   
-  ## Die Pause <a name="sechs"></a>
+  ## Die Pause <a name="6"></a>
   
   ![Pause](https://user-images.githubusercontent.com/54102292/68529775-4d4e0c80-0302-11ea-814b-1efafe02cc6b.png)
   
@@ -675,7 +675,7 @@ Das gleiche wie bei der Pausefunktion gilt auch bei der Gameoverfunktion. Nur da
  ``` 
 </details>
 
-## Gameover <a name="sieben"></a>
+## Gameover <a name="7"></a>
 
 ![Gameover](https://user-images.githubusercontent.com/54102292/68529831-044a8800-0303-11ea-88d0-32d0f0391a1d.png)
 
@@ -749,10 +749,10 @@ if (mousePressedOver(New_game_block)){
 ```
 </details>
 
-## Das Schlusswort  <a name="acht"></a>
+## Das Schlusswort  <a name="8"></a>
 
 Unser erstes Projekt, welches wir ohne jegliche Vorkenntnisse angefangen haben, hat uns sehr gut gefallen und wir haben viel neues gelernt. Nach anfänglichen Schwierigkeiten mit der Projektfindung haben wir uns gut in das Projekt reingefunden und mit großer Begeisterung an unserem Projekt gearbeitet. Dies führte dazu, dass wir auch viele Stunden am Wochenende in das Projekt investiert haben. Auch wenn es zwischen durch einige Schwierigkeiten mit unserem counter gab und es uns viele Stunden gekostet hat dieses Problem zu lösen haben wir es geschafft und sind sehr zufrieden mit unserem Spiel. Auch wenn wir viele Extrastunden investiert haben, hat es sich für uns gelohnt. Abschließend kann man sagen, dass wir viel gelernt haben und stolz darüber sind, dass wir es geschafft haben all unsere Extras im Spiel programmiert zu haben.  
 
-## Der Stundenblog  <a name="neun"></a>
+## Der Stundenblog  <a name="9"></a>
 
 https://github.com/Watndat/Stundenblog
