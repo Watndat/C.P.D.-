@@ -21,6 +21,10 @@ Schuljahr 2019/2020
 
 [Gameover](#sieben)
 
+[Das Schlusswort](#acht)
+
+[Der Stundenblog](#neun)
+
 
 ## Die Idee! <a name="eins"></a>
 
@@ -671,7 +675,7 @@ Das gleiche wie bei der Pausefunktion gilt auch bei der Gameoverfunktion. Nur da
  ``` 
 </details>
 
-## Gameover <a name="acht"></a>
+## Gameover <a name="sieben"></a>
 
 ![Gameover](https://user-images.githubusercontent.com/54102292/68529831-044a8800-0303-11ea-88d0-32d0f0391a1d.png)
 
@@ -745,6 +749,10 @@ if (mousePressedOver(New_game_block)){
 ```
 </details>
 
-## Das Schlusswort
+## Das Schlusswort  <a name="acht"></a>
 
 Unser erstes Projekt, welches wir ohne jegliche Vorkenntnisse angefangen haben, hat uns sehr gut gefallen und wir haben viel neues gelernt. Nach anfänglichen Schwierigkeiten mit der Projektfindung haben wir uns gut in das Projekt reingefunden und mit großer Begeisterung an unserem Projekt gearbeitet. Dies führte dazu, dass wir auch viele Stunden am Wochenende in das Projekt investiert haben. Auch wenn es zwischen durch einige Schwierigkeiten mit unserem counter gab und es uns viele Stunden gekostet hat dieses Problem zu lösen haben wir es geschafft und sind sehr zufrieden mit unserem Spiel. Auch wenn wir viele Extrastunden investiert haben, hat es sich für uns gelohnt. Abschließend kann man sagen, dass wir viel gelernt haben und stolz darüber sind, dass wir es geschafft haben all unsere Extras im Spiel programmiert zu haben.  
+
+## Der Stundenblog  <a name="neun"></a>
+
+https://github.com/Watndat/Stundenblog
