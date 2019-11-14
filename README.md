@@ -266,7 +266,9 @@ Screen_start_init();
       Text_start = text("PONG", 70,200);  
   ```
   ---
- Der Startbutton (Startblock), mit dem der Spieler vom Startbildschirm zum Spiel wechseln kann, wird ebenfalls in der Funktion Screen_start_init festgelegt. Hierbei wird durch den Befehl "createSprite" festgelegt, wo dieser Startblock liegen soll. Es wird neben der x und y Position auch die Höhe und die Breite festgelgt. Durch den Befehl "setAnimation" wird der Startblock mit der entsprechenden Animation ausgegeben. Die Animation ist bei Code.org im Zeichentrickbereich hinterlegt.
+ Der Startbutton (Startblock), mit dem der Spieler vom Startbildschirm zum Spiel wechseln kann, wird ebenfalls in der Funktion Screen_start_init festgelegt. Hierbei wird durch den Befehl "createSprite" festgelegt, wo dieser Startblock liegen soll. Es wird neben der x und y Position auch die Höhe und die Breite festgelgt. Durch den Befehl "setAnimation" wird der Startblock mit der entsprechenden Animation ausgegeben. Die Animation ist bei Code.org im Zeichentrickbereich (mit dem blauen Pfeil dargesetellt) hinterlegt.
+ 
+ ![C P D  - Zeichentool](https://user-images.githubusercontent.com/54102292/68848826-43952200-06d1-11ea-922c-284d0ee5f159.jpg)
  
 ```
  //Startblock  
