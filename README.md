@@ -270,6 +270,8 @@ Screen_start_init();
  
  ![C P D  - Zeichentool](https://user-images.githubusercontent.com/54102292/68848826-43952200-06d1-11ea-922c-284d0ee5f159.jpg)
  
+ Der verwendete Code für den Startblock ist:
+ 
 ```
  //Startblock  
       Startblock = createSprite (200,285,150,50);  
@@ -282,7 +284,7 @@ Dies ist einaml die Ansicht des Zeichentrickbereiches, indem der Startbottun ers
 
 ---
 Der Ball welcher auf dem Startbildschirm "herumfliegt" wird ebenfals in dieser Funktion definiert. Auch hier haben wir wieder ein Sprite definiert mit einer x,y Koordinate. Ebenfalls haben wir die Weite und Höhe des Balles definiert und auch eine Farbe.
-Damit der Ball sich bewegt, haben wir ebenfalls einen vorgefertigten Befehl von Code.org benutzt. Dieser heißt "Ball.velocity" wobei dann immer die jeweillige Achse mit rangehängt wird (Ball.velocityX). Damit wird die Geschwindigkeit in x- oder y- Richtung bestimmt.
+Damit der Ball sich bewegt, haben wir außerdem einen vorgefertigten Befehl von Code.org benutzt. Dieser heißt "Ball.velocity" wobei dann immer die jeweillige Achse mit an den Befehl geschrieben wird (Ball.velocityX). Damit wird die Geschwindigkeit in x- oder y- Richtung bestimmt.
 
 ```
 //Ball
@@ -297,7 +299,8 @@ Damit der Ball sich bewegt, haben wir ebenfalls einen vorgefertigten Befehl von 
       Ball.velocityY = 5;
   ``` 
   ---
-Desweitern haben wir in dieser Funktion auch die Bildschirmgrenze definiert. Diese haben wir in Abhängikeit zur Spielfeldgröße gesetzt. Somit ist es egal, in welcher Größe das Spielfeld angezeigt wird. Dies haben wir mit dem Befehl World.height, bzw. World.width gemacht.
+Des Weitern haben wir in dieser Funktion auch die Bildschirmgrenze definiert. Diese haben wir in Abhängikeit zur Spielfeldgröße gesetzt. Somit ist es egal, in welcher Größe das Spielfeld angezeigt wird. Dies haben wir mit dem Befehl World.height, bzw. World.width gemacht.
+
   ```
 //Screen_height_start
     Screen_height = 0;
