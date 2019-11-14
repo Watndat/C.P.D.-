@@ -316,15 +316,12 @@ Des Weitern haben wir in dieser Funktion auch die Bildschirmgrenze definiert. Di
 ```
 ---
     
-  
-  ![Screenshot_2019-08-28 Startbutton-Bild](https://user-images.githubusercontent.com/54102292/63864321-ed58f280-c9af-11e9-909a-866e0d629293.png)
-
   </details> 
   
 <details>
   <summary>function Screen_start_logic</summary>
   
-  Als erstes haben wir nochmal den Hintergrund und den Text definiert, damit der Ball welcher über den Bildschirm fliegt auch zu sehen ist und es nicht zu einer langen Reihe an Bällen kommt.
+  Als erstes wird nochmal den Hintergrund und den Text definiert, damit der Ball welcher über den Bildschirm fliegt auch zu sehen ist und es nicht zu einer langen Reihe an Bällen kommt.
   Damit der Ball am Bildschirm Rand abprallt, haben wir eine if-Funktion definiert. Die besagen, dass wenn der Ball den Bildschirmrand berührt, die Ballgeschwindigkeit (Ball.velocity) sich vom Vorzeichen her umdreht (mal -1). Dadurch verändert sich der X- bzw. Y-Wert, und somit die Richtung des Balles. Dies haben wir bei allen vier Bildschirmrändern getan.  
   ```
 //Ball.isTouching Screen_height
