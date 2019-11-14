@@ -273,6 +273,11 @@ Screen_start_init();
       Startblock = createSprite (200,285,150,50);  
       Startblock.seeAnimation("flatDark41_1");  
 ```
+
+![Screenshot_2019-11-14 Startbottun](https://user-images.githubusercontent.com/54102292/68848663-f5801e80-06d0-11ea-8a41-38e8390c3331.png)
+
+Dies ist einaml die Ansicht des Zeichentrickbereiches, indem der Startbottun erstellt worden ist.
+
 ---
 Der Ball welcher auf dem Startbildschirm "herumfliegt" wird ebenfals in dieser Funktion definiert. Auch hier haben wir wieder ein Sprite definiert mit einer x,y Koordinate. Ebenfalls haben wir die Weite und Höhe des Balles definiert und auch eine Farbe.
 Damit der Ball sich bewegt, haben wir ebenfalls einen vorgefertigten Befehl von Code.org benutzt. Dieser heißt "Ball.velocity" wobei dann immer die jeweillige Achse mit rangehängt wird (Ball.velocityX). Damit wird die Geschwindigkeit in x- oder y- Richtung bestimmt.
