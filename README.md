@@ -242,6 +242,7 @@ if (Screen_changed_start) {
  
 ![C P D  - Spielelabor - Startbildschirm 2 0](https://user-images.githubusercontent.com/54102292/68607852-e3746500-04b1-11ea-8dbe-39e7d18a1c02.jpg)
 
+![C P D  - Spielelabor - Startbildschirm 2 0](https://user-images.githubusercontent.com/54102292/68844817-b222b180-06ca-11ea-8c09-749b57c837c6.jpg)
 
  
 Der Code für den Startbildschirm ist einmal in der Funktion Screen_start_init und in der Funktion Screen_start_logic zu finden.
