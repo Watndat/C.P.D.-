@@ -747,4 +747,4 @@ if (mousePressedOver(New_game_block)){
 
 ## Das Schlusswort
 
-Unser erstes Projekt im Informatikkurs hat uns sehr begeistert und wir haben viel neus gelernt. 
+Unser erstes Projekt, welches wir ohne jegliche Vorkenntnisse angefangen haben, hat uns sehr gut gefallen und wir haben viel neues gelernt. Nach anfänglichen Schwierigkeiten mit der Projektfindung haben wir uns gut in das Projekt reingefunden und mit großer Begeisterung an unserem Projekt gearbeitet. Auch wenn es zwischen durch einige Schwierigkeiten mit unserem counter gab und es uns viele Stunden gekostet hat dieses Problem zu lösen haben wir es geschafft und sind sehr zufrieden mit unserem Spiel. Abschließend kann man sagen, dass wir viel gelernt haben und stolz darüber sind, dass wir es geschafft haben all unsere Extras im Spiel programmiert zu haben.
