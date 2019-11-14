@@ -268,8 +268,6 @@ Screen_start_init();
   ---
  Der Startbutton (Startblock), mit dem der Spieler vom Startbildschirm zum Spiel wechseln kann, wird ebenfalls in der Funktion Screen_start_init festgelegt. Hierbei wird durch den Befehl "createSprite" festgelegt, wo dieser Startblock liegen soll. Es wird neben der x und y Position auch die Höhe und die Breite festgelgt. Durch den Befehl "setAnimation" wird der Startblock mit der entsprechenden Animation ausgegeben. Die Animation ist bei Code.org im Zeichentrickbereich (mit dem blauen Pfeil dargesetellt) hinterlegt.
  
- ![C P D  - Zeichentool](https://user-images.githubusercontent.com/54102292/68848826-43952200-06d1-11ea-922c-284d0ee5f159.jpg)
- 
  Der verwendete Code für den Startblock ist:
  
 ```
@@ -277,14 +275,16 @@ Screen_start_init();
       Startblock = createSprite (200,285,150,50);  
       Startblock.seeAnimation("flatDark41_1");  
 ```
+ 
+ ![C P D  - Zeichentool](https://user-images.githubusercontent.com/54102292/68848826-43952200-06d1-11ea-922c-284d0ee5f159.jpg)
 
 ![Screenshot_2019-11-14 Startbottun](https://user-images.githubusercontent.com/54102292/68848663-f5801e80-06d0-11ea-8a41-38e8390c3331.png)
 
 Dies ist einaml die Ansicht des Zeichentrickbereiches, indem der Startbottun erstellt worden ist.
 
 ---
-Der Ball welcher auf dem Startbildschirm "herumfliegt" wird ebenfals in dieser Funktion definiert. Auch hier haben wir wieder ein Sprite definiert mit einer x,y Koordinate. Ebenfalls haben wir die Weite und Höhe des Balles definiert und auch eine Farbe.
-Damit der Ball sich bewegt, haben wir außerdem einen vorgefertigten Befehl von Code.org benutzt. Dieser heißt "Ball.velocity" wobei dann immer die jeweillige Achse mit an den Befehl geschrieben wird (Ball.velocityX). Damit wird die Geschwindigkeit in x- oder y- Richtung bestimmt.
+Der Ball welcher auf dem Startbildschirm "herumfliegt" wird ebenfals in dieser Funktion definiert. Auch hier wurde wieder ein Sprite definiert mit einer x,y Koordinate. Ebenfalls mussten die Weite und Höhe sowie eine Farbe für den Ball definierz werden.  
+Für deie Bewegung des Balls ist ein vorgefertigten Befehl von Code.org benutzt worden. Dieser heißt "Ball.velocity" wobei dann immer die jeweillige Achse mit an den Befehl geschrieben wird (Ball.velocityX). Damit wird die Geschwindigkeit in x- oder y- Richtung bestimmt.
 
 ```
 //Ball
@@ -299,7 +299,7 @@ Damit der Ball sich bewegt, haben wir außerdem einen vorgefertigten Befehl von 
       Ball.velocityY = 5;
   ``` 
   ---
-Des Weitern haben wir in dieser Funktion auch die Bildschirmgrenze definiert. Diese haben wir in Abhängikeit zur Spielfeldgröße gesetzt. Somit ist es egal, in welcher Größe das Spielfeld angezeigt wird. Dies haben wir mit dem Befehl World.height, bzw. World.width gemacht.
+Des Weitern haben ist in dieser Funktion auch die Bildschirmgrenze definiert. Diese wurde in Abhängikeit zur Spielfeldgröße gesetzt. Somit ist es egal, in welcher Größe das Spielfeld angezeigt wird. Dies konnte mit dem Befehl World.height, bzw. World.width geschrieben werden.
 
   ```
 //Screen_height_start
@@ -321,8 +321,8 @@ Des Weitern haben wir in dieser Funktion auch die Bildschirmgrenze definiert. Di
 <details>
   <summary>function Screen_start_logic</summary>
   
-  Als erstes wird nochmal den Hintergrund und den Text definiert, damit der Ball welcher über den Bildschirm fliegt auch zu sehen ist und es nicht zu einer langen Reihe an Bällen kommt.
-  Damit der Ball am Bildschirm Rand abprallt, haben wir eine if-Funktion definiert. Die besagen, dass wenn der Ball den Bildschirmrand berührt, die Ballgeschwindigkeit (Ball.velocity) sich vom Vorzeichen her umdreht (mal -1). Dadurch verändert sich der X- bzw. Y-Wert, und somit die Richtung des Balles. Dies haben wir bei allen vier Bildschirmrändern getan.  
+  Als erstes wird nochmal den Hintergrund und den Text definiert, damit der Ball welcher über den Bildschirm fliegt auch zu sehen ist und es nicht zu einer langen Reihe an Bällen kommt.  
+  Damit der Ball am Bildschirm Rand abprallt, wurde eine if-Funktion definiert. Die besagen, dass wenn der Ball den Bildschirmrand berührt, die Ballgeschwindigkeit (Ball.velocity) sich vom Vorzeichen her umdreht (mal -1). Dadurch verändert sich der X- bzw. Y-Wert, und somit die Richtung des Balles. Dies haben wir bei allen vier Bildschirmrändern getan.  
   ```
 //Ball.isTouching Screen_height
   if (Ball.y < Screen_height){
