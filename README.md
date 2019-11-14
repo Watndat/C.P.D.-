@@ -103,7 +103,7 @@ In diesem Spiel wurde allerdings in Javaskript geschrieben. Auch hier gibt es in
 <details>
   <summary> Die globalen Variablen </summary>
 
-Für das Grundgerüst von C.P.D. werden globale Variablen verwendet. Das heißt sie werden im Gegensatz zu lokalen Variablen am Anfang des Codes definiert und sind im gesamten Programmcode, auch innerhalb von Funktionen, sichtbar. Lokale Variablen werden erst in einer Funktion definiert und mit Werten belegt, allerdings kann dann auch innerhalb dieser Funktion auf die lokale Variable zugegriffen werden. Bei globalen Variablen können alle Funktion auf die Variablen zugreifen und diese mit Werten belegen.
+Für das Grundgerüst von C.P.D. haben wir globale Variablen verwendet. Das heißt sie werden im Gegensatz zu lokalen Variablen am Anfang des Codes definiert und sind im gesamten Programmcode, auch innerhalb von Funktionen, sichtbar. Lokale Variablen werden erst in einer Funktion definiert und mit Werten belegt, allerdings kann dann auch innerhalb dieser Funktion auf die lokale Variable zugegriffen werden. Bei globalen Variablen können alle Funktion auf die Variablen zugreifen und diese mit Werten belegen.
 
 ```  
 var Hintergrund_start;  
@@ -253,7 +253,7 @@ Screen_start_init();
   <summary>function Screen_start_init</summary>
  
  
- In der Funktion Screen_start_init wurde der Hintergrund (Hintergrund_start) als weiß festgelegt. Bei der Schrift (Text_start) wird einmal die Größe, die Schriftart, die Farbe und zum Schluss noch den eigentlichen Text mit der Position, wo dieser stehen soll, festgelgt.
+ In der Funktion Screen_start_init haben wir den Hintergrund (Hintergrund_start) als weiß festgelegt. Bei der Schrift (Text_start) wird einmal die Größe, die Schriftart, die Farbe und zum Schluss noch den eigentlichen Text mit der Position, wo dieser stehen soll, festgelgt.
   
    ```
   //Hintergrund_start 
@@ -283,8 +283,8 @@ Screen_start_init();
 Dies ist einaml die Ansicht des Zeichentrickbereiches, indem der Startbottun erstellt worden ist.
 
 ---
-Der Ball welcher auf dem Startbildschirm "herumfliegt" wird ebenfals in dieser Funktion definiert. Auch hier wurde wieder ein Sprite definiert mit einer x,y Koordinate. Ebenfalls mussten die Weite und Höhe sowie eine Farbe für den Ball definierz werden.  
-Für deie Bewegung des Balls ist ein vorgefertigten Befehl von Code.org benutzt worden. Dieser heißt "Ball.velocity" wobei dann immer die jeweillige Achse mit an den Befehl geschrieben wird (Ball.velocityX). Damit wird die Geschwindigkeit in x- oder y- Richtung bestimmt.
+Der Ball welcher auf dem Startbildschirm "herumfliegt" wird ebenfals in dieser Funktion definiert. Auch hier haben wir wieder ein Sprite definiert mit einer x,y Koordinate. Ebenfalls mussten die Weite und Höhe sowie eine Farbe für den Ball definiert werden.  
+Für die Bewegung des Balls haben wir einen vorgefertigten Befehl von Code.org benutzt. Dieser heißt "Ball.velocity", wobei dann immer die jeweillige Achse mit an den Befehl geschrieben wird (Ball.velocityX). Damit wird die Geschwindigkeit in x- oder y- Richtung bestimmt.
 
 ```
 //Ball
@@ -299,7 +299,7 @@ Für deie Bewegung des Balls ist ein vorgefertigten Befehl von Code.org benutzt 
       Ball.velocityY = 5;
   ``` 
   ---
-Des Weitern haben ist in dieser Funktion auch die Bildschirmgrenze definiert. Diese wurde in Abhängikeit zur Spielfeldgröße gesetzt. Somit ist es egal, in welcher Größe das Spielfeld angezeigt wird. Dies konnte mit dem Befehl World.height, bzw. World.width geschrieben werden.
+Des Weitern haben wir in dieser Funktion auch die Bildschirmgrenze definiert. Diese wird in Abhängikeit zur Spielfeldgröße gesetzt. Somit ist es egal, in welcher Größe das Spielfeld angezeigt wird. Dies konnte mit dem Befehl World.height, bzw. World.width geschrieben werden.
 
   ```
 //Screen_height_start
@@ -321,8 +321,8 @@ Des Weitern haben ist in dieser Funktion auch die Bildschirmgrenze definiert. Di
 <details>
   <summary>function Screen_start_logic</summary>
   
-  Als erstes wird nochmal den Hintergrund und den Text definiert, damit der Ball welcher über den Bildschirm fliegt auch zu sehen ist und es nicht zu einer langen Reihe an Bällen kommt.  
-  Damit der Ball am Bildschirm Rand abprallt, wurde eine if-Funktion definiert. Die besagen, dass wenn der Ball den Bildschirmrand berührt, die Ballgeschwindigkeit (Ball.velocity) sich vom Vorzeichen her umdreht (mal -1). Dadurch verändert sich der X- bzw. Y-Wert, und somit die Richtung des Balles. Dies haben wir bei allen vier Bildschirmrändern getan.  
+  Als erstes wird hier nochmal den Hintergrund und der Text definiert, damit der Ball welcher über den Bildschirm fliegt auch zu sehen ist und es nicht zu einer langen Reihe an Bällen kommt.  
+  Damit der Ball am Bildschirm Rand abprallt, haben wir wieder if-Funktionen definiert. Diese besagen, dass wenn der Ball den Bildschirmrand berührt, die Ballgeschwindigkeit (Ball.velocity) sich vom Vorzeichen her umdreht (mal -1). Dadurch verändert sich der X- bzw. Y-Wert, und somit die Richtung des Balles. Dies haben wir bei allen vier Bildschirmrändern definiert.  
   ```
 //Ball.isTouching Screen_height
   if (Ball.y < Screen_height){
@@ -346,7 +346,7 @@ Des Weitern haben ist in dieser Funktion auch die Bildschirmgrenze definiert. Di
 ```
 ---
 
-Damit das Spiel gestartet werden kann, haben wir den Startblock. Wenn man auf diesen mit der Maus klickt, erklingt ein Sound, welchen wir aus der Soundbibliothek von Code.org haben. Desweitern wird definiert, das die Aussage Screen_changed_start "wahr" ist. Dadurch "springt" das Programm wieder in die Hauptschleife, um dort die if-Funktion für Screen_changed_start auszuführen.
+Damit das Spiel gestartet werden kann, haben wir den Startblock auf dem Startbildschirm. Wenn man auf diesen mit der Maus klickt, erklingt ein Sound, welchen wir aus der Soundbibliothek von Code.org haben. Desweitern wird definiert, das die Aussage Screen_changed_start "wahr" ist. Dadurch "springt" das Programm wieder in die Hauptschleife, um dort die if-Funktion für Screen_changed_start auszuführen.
 
 ```
 // mousePressedOver (Startblock)
