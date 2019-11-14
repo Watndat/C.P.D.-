@@ -28,11 +28,10 @@ Schuljahr 2019/2020
 
 ## Die Idee! <a name="1"></a>
 
-Ein altes Spiel, welches aber jeder kennt. **PONG** C.P.D. ist angelehnt an den Klassiker. Jedoch sind einige Funktionen hinzugefügt. Im Folgenden Blog werden alle Funktionen, sowie der Code für das Spiel erklärt und dargestellt.
-Wir haben uns für einen Klassiker entschieden, der im ersten Moment einfach aussieht, aber dennoch seine Herrausforderungen besitzt. Diese haben wir zum Teil selber erschaffen, durch Extras im Spiel, aber einige waren auch von Anfang an dar. 
+Ein altes Spiel, welches aber jeder kennt. **PONG!!** C.P.D. ist angelehnt an den Klassiker. Jedoch sind einige Funktionen hinzugefügt worden. Im Folgenden Blog werden alle Funktionen, sowie der Code für das Spiel erklärt und dargestellt.  
+Wir haben uns für einen Klassiker entschieden, der im ersten Moment einfach aussieht, aber dennoch seine Herrausforderungen besitzt. Diese haben wir zum Teil selber erschaffen, wie einige Extras im Spiel, aber einige Funktionen sind von Klassiker übernommen worden.
 
-
-Hier in diesem Spiel wird der alte Klassiker PONG aufgegriffen und verbessert. Der Spieler hat die Möglichkeit, das Spiel mit einem Klick auf den Startbotton zu beginnen. Im Spiel selbst 
+Hier in diesem Spiel wird der alte Klassiker PONG aufgegriffen und verbessert. Der Spieler hat die Möglichkeit, das Spiel mit einem _Klick_ auf den Startbotton zu beginnen. Im Spiel selbst kann der Spieler eine Pause einlegen, indem er die _Leertaste_ drückt und dann mit einem _Klick_ auf den Continou Bottun weiter spielen kann.
  
 <hr>
 
@@ -51,15 +50,15 @@ Hier in diesem Spiel wird der alte Klassiker PONG aufgegriffen und verbessert. D
 
 <details>
   <summary>Kurse</summary>
-  Bei code.org können Nutzer auch ohne Anmeldung Kurse zum Thema programmieren machen. Dabei werden in verschiedene Altersstufen unterschieden. Auch gibt es Kurse für Nichtleser, sodass auch schon die Kleinsten programmieren lernen können.   
+  Bei code.org können Nutzer auch ohne Anmeldung Kurse zum Thema programmieren machen. Dabei werden in verschiedene Altersstufen unterschieden. Dadurch gibt es auch Kurse für Nichtleser, sodass auch schon die Kleinsten programmieren lernen können.   
   
 ![Screenshot_2019-11-06 Kurs-Blog](https://user-images.githubusercontent.com/54102292/68305936-dbc75180-00a8-11ea-8260-d0db680c4457.png)
   
-Hier wird ein möglicher Kurs gezeigt. Hierbei soll der Benutzer den Künstler durch das Einsezten der vorhandenen Bausteine dazu bringen, das vorgegebene Muster nachzumalen.  
+Hier wird ein möglicher Kurs gezeigt. Dabei soll der Benutzer den Künstler durch das Einsezten der vorhandenen Bausteine dazu bringen, das vorgegebene Muster nachzumalen.  
 
 ![InkedScreenshot_2019-11-06 Kurs-fertig-Blog_LI](https://user-images.githubusercontent.com/54102292/68306539-04038000-00aa-11ea-95e8-10e89e56c5b5.jpg)
 
-Wenn die Bausteine eigefügt sind und auf den Startbutton geklickt wird, dann beginnt der Künstler zu zeichnen und mit den richtigen Variablen (mit roten Pfeilen markiert) an der richtigen Stelle wird auch das gezeichnet. Klickt man auf den Progarmm zeigen Button (mit dem grünen Pfeil mariert), so wird der Javascriptcode angezeigt.
+Wenn die Bausteine eigefügt sind und auf den Startbutton geklickt wird, beginnt der Künstler zu zeichnen und mit den richtigen Variablen (mit roten Pfeilen markiert) an der richtigen Stelle wird auch das richtige gezeichnet. Klickt man auf den _Progarmm zeigen_ Button (mit dem grünen Pfeil mariert), so wird der Javascriptcode angezeigt.
 
   ![Screenshot_2019-11-06 Kurs-Progamm-Blog](https://user-images.githubusercontent.com/54102292/68306932-b89da180-00aa-11ea-830a-a4265b615904.png)
   
@@ -67,10 +66,10 @@ Wenn die Bausteine eigefügt sind und auf den Startbutton geklickt wird, dann be
   
 <details>
   <summary>Programmierfunktion</summary>
- Auf code.org können verschiedenen Module benutzt werden, um ein Spiel oder Sonstiges programmieren zu können. Um nun ein Spiel programmieren zu können, wird das Spielelabor ausgewählt. In diesem Labor kann alles auprobiert werden. code.org stellt bereits vorgefertigte Baussteine zur Verfügung. Diese können als Bausteine angezeigt werden oder aber auch als Javaskipt. Auch lassen sich eigende nicht vorhandene Befehle programmieren, wobei das Programm nicht alle Javaskript funktionen kennt.
-  Es kann somit für Angfänger, sowie fortgeschrittene leicht programmiert werden.
-  Im App-Labor könne Spiele in Form einer App programmiert werden. Dadurch lassen sich diese Spiele auch auf Tablets oder Handys spielen.   
-  Hierbei muss allerdings beachtet werden, dass code.org teilweise eigene Befehle verwendet, sodass eine Recherche für Javascriptbefehle schwierig wir. Dadurch muss der Benuzer vieles ausprobieren und kommt hauptsächlich mit den code.org Befehlen zu seinem Ziel.
+ Auf code.org können verschiedenen Module benutzt werden, um ein Spiel oder Sonstiges programmieren zu können. Um nun ein Spiel programmieren zu können, wird das Spielelabor ausgewählt. In diesem Labor kann alles auprobiert werden. code.org stellt bereits vorgefertigte Baussteine zur Verfügung. Diese können als Bausteine angezeigt werden oder aber auch als Javaskipt. Auch lassen sich eigene, also nicht auf code.org vorhandene Befehle programmieren, wobei das Programm nicht alle Javaskript funktionen kennt. Dadurch kann für Angfänger, sowie fortgeschrittene leicht programmiert werden, aber auch vieles ausprbiert.  
+ Im App-Labor könne Spiele in Form einer App programmiert werden. Dadurch lassen sich diese Spiele auch auf Tablets oder Handys spielen.   
+ Während des programmierens werden im Code selbst werden fehler durch Symbole an der Seite angezeigt, sodass Fehler schnell auffallen bzw. der Benutzer nicht lange nach seinen Fehlern suchen muss. Dies passiert nur bei Bugs oder bei nicht bekannten Befehlen nicht.
+ Bei alles Codes muss allerdings beachtet werden, dass code.org teilweise eigene Befehle verwendet, sodass eine Recherche für Javascriptbefehle schwierig wird. Dadurch muss der Benuzer vieles ausprobieren und kommt hauptsächlich mit den code.org Befehlen zu seinem Ziel.  
   </details>
   
 <details>
@@ -93,7 +92,7 @@ In diesem Spiel wurde allerdings in Javaskript geschrieben. Auch hier gibt es in
   * _Comments_ sind grün 
   * variierbare Elemente wie _Farben_ oder _Positionsangaben_ werden blau angezeigt
   * alle aderen _Texte_ sind grau
-  * die Boolean, welche _true_ und _false_ definieren, sind blau
+  * die Boolean-Variablen, welche _true_ und _false_ definieren, sind blau
   
   </details>
   
@@ -104,7 +103,7 @@ In diesem Spiel wurde allerdings in Javaskript geschrieben. Auch hier gibt es in
 <details>
   <summary> Die globalen Variablen </summary>
 
-In unserem Spiel verwenden wir globale Variablen. Das heißt sie werden im Gegensatz zu lokalen Variablen am Anfang des Codes definiert und sind im gesamten Programmcode, auch innerhalb von Funktionen, sichtbar. Lokale Variablen werden erst in einer Funktion definiert und mit Werten belegt, allerdings kann dann auch innerhalb dieer Funktion auf die lokale Variable zugegriffen werden. Bei globalen Variablen können alle Funktion auf die Variablen zugreifen und diese mit Werten belegen.
+Für das Grundgerüst von C.P.D. werden globale Variablen verwendet. Das heißt sie werden im Gegensatz zu lokalen Variablen am Anfang des Codes definiert und sind im gesamten Programmcode, auch innerhalb von Funktionen, sichtbar. Lokale Variablen werden erst in einer Funktion definiert und mit Werten belegt, allerdings kann dann auch innerhalb dieser Funktion auf die lokale Variable zugegriffen werden. Bei globalen Variablen können alle Funktion auf die Variablen zugreifen und diese mit Werten belegen.
 
 ```  
 var Hintergrund_start;  
@@ -137,7 +136,7 @@ var counter1 = 0;
 var counter2 = 0;
 ```
 ---
-In unserem Variablen haben wir auch Boolean Variablen benutzt. Diese können Aussagen, wie zum Beispiel Screen_start_active, als "wahr" (true) oder "falsch" (false) definieren. Somit kann inerhalb einer if-Funktion zum Beispiel gesagt werden, wenn die Aussage "wahr" ist, soll eine bestimmte Aktion ausgeführt werden.
+In den Variablen werden auch Boolean Variablen benutzt. Diese können Aussagen, wie zum Beispiel Screen_start_active, als "wahr" (true) oder "falsch" (false) definieren. Somit kann inerhalb einer if-Funktion zum Beispiel gesagt werden, wenn die Aussage "wahr" ist, soll eine bestimmte Aktion ausgeführt werden.
 
 ```
 var Screen_start_active = Boolean (true);  
@@ -158,14 +157,14 @@ var Screen_changed_weiter = Boolean (false);
 <details>
   <summary> Die Zustände </summary>
   
-Unser Spiel hat verschiedene Zustände, welche hier im Zustandsübergangsdiagramm zusehen sind.
+C.P.D. hat verschiedene Zustände, welche hier im Zustandsübergangsdiagramm zusehen sind.
 
 ![Zustandsdiamgramm 2](https://user-images.githubusercontent.com/54102292/68529440-1a564980-02ff-11ea-85c6-e6a14c8e32ab.png)
 
-Der erste Zustand der erreicht werden kann, ist der Start. Von diesem Zustand kann man auf das Spiel kommen. Sobald man im Spiel ist, gibt es mehrere Möglichkeiten. Man kann in den Pausezustand gelangen und von diesem auch wieder zurück zum Spiel. Vom Spiel in den Gameoverzustand. Von diesem Zustand kann man allerdings auch wieder zum Spiel gelangen, damit mehrere Runden gespielt werden können.
+Der erste Zustand der erreicht werden kann, ist der Start. Von diesem Zustand kann man auf das Spiel kommen. Sobald man im Spiel ist, gibt es mehrere Möglichkeiten. Man kann in den Pausezustand gelangen und von diesem auch wieder zurück zum Spiel. Vom Spiel in den Gameoverzustand und von diesem Zustand kann der Spieler auch wieder zum Spiel gelangen, damit mehrere Runden gespielt werden können.
 
-Zu jedem Zustand gibt es ein Screen, wobei jeder Screen durch eine eigene init-Funktion initialisiert wird. Die Logik wird in der jeweilligen Logic-Funktion abgearbeitet.
-Die einzelnen Zustände, bzw. Screens, werden über die Hauptschleife gesteurt. Dies ist durch die Boolean Variablen möglich. Jeder Screen hat zwei boolsche Variablen. Einmal die Aussage darüber ob der jeweillige Screen aktiv ist (Screen_start_active) und ob dieser Screen sich ändern soll (Screen_changed_start).
+Zu jedem Zustand gibt es ein Screen, wobei jeder Screen durch eine eigene init-Funktion initialisiert wird. Die Logik wird in der jeweilligen Logic-Funktion abgearbeitet.  
+Die einzelnen Zustände, bzw. Screens, werden über die Hauptschleife gesteurt. Dies ist durch die Boolean Variablen möglich. Jeder Screen hat zwei boolsche Variablen. Einmal die Aussage darüber ob der jeweillige Screen aktiv ist (Screen_start_active) und ob dieser Screen sich ändern soll (Screen_changed_start).  
 In der Hauptschleife wird dauerhaft abgefragt, welche Aussage gerade "wahr" ist. Wenn ein Aussage über den aktiv Zustand eines Screens wahr ist, wird definiert, dass in die logic-Funktion gesprungen wird.
 
 ```   
@@ -186,8 +185,8 @@ In der Hauptschleife wird dauerhaft abgefragt, welche Aussage gerade "wahr" ist.
   }
 ```
 ---
-Wenn ein Screen gewechselt wird, werden verschiedene Aktionen ausgeführt. Als erstes wird der momentan aktive Screen "zerstört" (Screen_start_destory). Dies wird aber später nochmal genauer erklärt. 
-Des weitern wird der momentan aktive Bildschirm als "falsch" definiert und der Bildschirm der aktiv werden soll als "wahr" dargestellt (z.B. Screen_start_aktive = false und Screen_spiel_active = true). Damit der nächste Screen auch angezeigt wird, wird der entsprechende Screen initialisiert (Screen_spiel_init). Zum Schluss wird noch die Aussage, dass der Screen wechseln soll, als "falsch" definiert.
+Wenn ein Screen gewechselt wird, werden verschiedene Aktionen ausgeführt. Als erstes wird der momentan aktive Screen "zerstört" (Screen_start_destory). Dies wird aber später nochmal genauer erklärt.   
+Desweitern wird der momentan aktive Bildschirm als "falsch" definiert und der Bildschirm der aktiv werden soll als "wahr" dargestellt (z.B. Screen_start_aktive = false und Screen_spiel_active = true). Damit der nächste Screen auch angezeigt wird, wird der entsprechende Screen initialisiert (Screen_spiel_init). Zum Schluss wird noch die Aussage, dass der Screen wechseln soll, als "falsch" definiert.
 
 ```
 if (Screen_changed_start) {
