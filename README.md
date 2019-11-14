@@ -186,7 +186,7 @@ In der Hauptschleife wird dauerhaft abgefragt, welche Aussage gerade "wahr" ist.
 ```
 ---
 Wenn ein Screen gewechselt wird, werden verschiedene Aktionen ausgeführt. Als erstes wird der momentan aktive Screen "zerstört" (Screen_start_destory). Dies wird aber später nochmal genauer erklärt.   
-Desweitern wird der momentan aktive Bildschirm als "falsch" definiert und der Bildschirm der aktiv werden soll als "wahr" dargestellt (z.B. Screen_start_aktive = false und Screen_spiel_active = true). Damit der nächste Screen auch angezeigt wird, wird der entsprechende Screen initialisiert (Screen_spiel_init). Zum Schluss wird noch die Aussage, dass der Screen wechseln soll, als "falsch" definiert.
+Des Weitern wird der momentan aktive Bildschirm als "falsch" definiert und der Bildschirm der aktiv werden soll als "wahr" dargestellt (z.B. Screen_start_aktive = false und Screen_spiel_active = true). Damit der nächste Screen auch angezeigt wird, wird der entsprechende Screen initialisiert (Screen_spiel_init). Zum Schluss wird noch die Aussage, dass der Screen wechseln soll, als "falsch" definiert.
 
 ```
 if (Screen_changed_start) {
@@ -241,9 +241,6 @@ if (Screen_changed_start) {
  
 ![C P D  - Spielelabor - Startbildschirm 2 0](https://user-images.githubusercontent.com/54102292/68607852-e3746500-04b1-11ea-8dbe-39e7d18a1c02.jpg)
 
-![C P D  - Spielelabor - Startbildschirm 2 0](https://user-images.githubusercontent.com/54102292/68844817-b222b180-06ca-11ea-8c09-749b57c837c6.jpg)
-
- 
 Der Code für den Startbildschirm ist einmal in der Funktion Screen_start_init und in der Funktion Screen_start_logic zu finden.
 Damit der Startbildschirm sofort zusehen ist, wenn das Programm gestartet wird, wird als erstes der Startbildschirm initialisiert.
 
@@ -269,7 +266,7 @@ Screen_start_init();
       Text_start = text("PONG", 70,200);  
   ```
   ---
- Der Startbutton (Startblock), mit dem man vom Startbildschirm zum Spiel wechseln kann, wird ebenfalls in der Funktion Screen_start_init festgelegt. Hierbei wird durch den Befehl "createSprite" festgelegt, wo dieser Startblock liegen soll. Es wird neben der x und y Position auch die Höhe und die Breite festgelgt. Durch den Befehl "setAnimation" wird der Startblock mit der entsprechenden Animation ausgegeben. Die Animation ist bei Code.org im Zeichentrickbereich hinterlegt.
+ Der Startbutton (Startblock), mit dem der Spieler vom Startbildschirm zum Spiel wechseln kann, wird ebenfalls in der Funktion Screen_start_init festgelegt. Hierbei wird durch den Befehl "createSprite" festgelegt, wo dieser Startblock liegen soll. Es wird neben der x und y Position auch die Höhe und die Breite festgelgt. Durch den Befehl "setAnimation" wird der Startblock mit der entsprechenden Animation ausgegeben. Die Animation ist bei Code.org im Zeichentrickbereich hinterlegt.
  
 ```
  //Startblock  
