@@ -67,7 +67,7 @@ Wenn die Bausteine eigefügt sind und auf den Startbutton geklickt wird, beginnt
 <details>
   <summary>Programmierfunktion</summary>
  Auf code.org können verschiedenen Module benutzt werden, um ein Spiel oder Sonstiges programmieren zu können. Um nun ein Spiel programmieren zu können, wird das Spielelabor ausgewählt. In diesem Labor kann alles auprobiert werden. code.org stellt bereits vorgefertigte Baussteine zur Verfügung. Diese können als Bausteine angezeigt werden oder aber auch als Javaskipt. Auch lassen sich eigene, also nicht auf code.org vorhandene Befehle programmieren, wobei das Programm nicht alle Javaskript funktionen kennt. Dadurch kann für Angfänger, sowie fortgeschrittene leicht programmiert werden, aber auch vieles ausprbiert.  
- Im App-Labor könne Spiele in Form einer App programmiert werden. Dadurch lassen sich diese Spiele auch auf Tablets oder Handys spielen.   
+ Im App-Labor könne Spiele in Form einer App programmiert werden. Dadurch lassen sich diese Spiele auch auf Tablets oder Handys spielen.  
  Während des programmierens werden im Code selbst werden fehler durch Symbole an der Seite angezeigt, sodass Fehler schnell auffallen bzw. der Benutzer nicht lange nach seinen Fehlern suchen muss. Dies passiert nur bei Bugs oder bei nicht bekannten Befehlen nicht.
  Bei alles Codes muss allerdings beachtet werden, dass code.org teilweise eigene Befehle verwendet, sodass eine Recherche für Javascriptbefehle schwierig wird. Dadurch muss der Benuzer vieles ausprobieren und kommt hauptsächlich mit den code.org Befehlen zu seinem Ziel.  
   </details>
